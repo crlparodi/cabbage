@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib import admin
 
-class BabySitter(models.Model):
+class Babysitter(models.Model):
     JOB_CHOICES = (
         ('BLANK', " "),
         ('MF', "Mère au Foyer"),

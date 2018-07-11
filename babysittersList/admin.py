@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import BabySitter
+from .models import Babysitter
 
 
 # Register your models here.
@@ -44,4 +44,4 @@ class BabySitterAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(BabySitter, BabySitterAdmin)
+admin.site.register(Babysitter, BabySitterAdmin)
