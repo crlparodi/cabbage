@@ -37,46 +37,46 @@ class Babysitter(models.Model):
         ('WEE', "Semaine")
     )
 
-    nurse_name = models.CharField(max_length=42, name="Nom", default=" ")
+    nurse_name = models.CharField("Nom", max_length=42, default=" ",)
     age = models.PositiveSmallIntegerField("Âge", default=0)
-    ville = models.CharField(max_length=64, name="Lieu de naissance", default=" ",)
+    birth_location = models.CharField("Lieu de naissance", max_length=64, default=" ",)
     job = models.CharField(
-        name="Profession",
+        "Profession",
         max_length=4,
         choices=JOB_CHOICES,
         default='BLANK',
     )
 
     age_target = models.CharField(
-        name="Tranche d'âge de l'enfant",
+        "Tranche d'âge de l'enfant",
         max_length=4,
         choices=AGE_TARGET_CHOICES,
         default='BLANK',
     )
 
     time_target = models.CharField(
-        name="Moments de la journée",
+        "Moments de la journée",
         max_length=4,
         choices=TIME_TARGET_CHOICES,
         default='BLANK',
     )
 
     grade_main = models.CharField(
-        name="Premier diplôme",
+        "Premier diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
         default='BLANK',
     )
 
     grade_sec = models.CharField(
-        name="2ème diplôme",
+        "2ème diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
         default='BLANK',
     )
 
     grade_tri = models.CharField(
-        name="3ème diplôme",
+        "3ème diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
         default='BLANK',

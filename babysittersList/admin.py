@@ -5,29 +5,29 @@ from .models import Babysitter
 # Register your models here.
 
 class BabySitterAdmin(admin.ModelAdmin):
-    list_display = ('Nom', 'Lieu de naissance', 'Tranche d\'âge de l\'enfant', 'Moments de la journée', 'price', 'price_unit')
+    list_display = ('nurse_name', 'birth_location', 'age_target', 'time_target', 'price', 'price_unit')
 
 
     fieldsets = (
         ('Situation Personnelle', {
             'fields': (
-                'Nom',
+                'nurse_name',
                 'age',
-                'Lieu de naissance'
+                'birth_location'
             )
         }),
         ('Garde d\'enfants', {
                 'fields': (
-                'Tranche d\'âge de l\'enfant',
-                'Moments de la journée'
+                'age_target',
+                'time_target'
             )
         }),
         ('Parcours professionnel', {
             'fields': (
-                'Profession',
-                'Premier diplôme',
-                '2ème diplôme',
-                '3ème diplôme',
+                'job',
+                'grade_main',
+                'grade_sec',
+                'grade_tri',
                 'aid_certificate_grade'
             )
         }),
