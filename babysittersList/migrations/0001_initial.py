@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='BabySitter',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=42)),
+                ('nurse_name', models.CharField(max_length=42)),
                 ('age', models.PositiveSmallIntegerField()),
                 ('ville', models.CharField(max_length=64)),
                 ('job', models.CharField(choices=[('MF', 'Mère au Foyer')], default='MF', max_length=2)),

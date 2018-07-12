@@ -37,7 +37,7 @@ class Babysitter(models.Model):
         ('WEE', "Semaine")
     )
 
-    name = models.CharField(max_length=42, name="Nom", default=" ")
+    nurse_name = models.CharField(max_length=42, name="Nom", default=" ")
     age = models.PositiveSmallIntegerField("Âge", default=0)
     ville = models.CharField(max_length=64, name="Lieu de naissance", default=" ",)
     job = models.CharField(
@@ -101,5 +101,6 @@ class Babysitter(models.Model):
         default='H',
     )
 
-
+    def __str__(self):
+        return self.nurse_name
 

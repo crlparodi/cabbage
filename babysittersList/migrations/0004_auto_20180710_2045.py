@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
         ),
         migrations.RemoveField(
             model_name='babysitter',
-            name='name',
+            name='nurse_name',
         ),
         migrations.RemoveField(
             model_name='babysitter',
