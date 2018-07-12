@@ -3,12 +3,10 @@ from django.contrib import admin
 
 class Babysitter(models.Model):
     JOB_CHOICES = (
-        ('BLANK', " "),
         ('MF', "Mère au Foyer"),
     )
 
     AGE_TARGET_CHOICES = (
-        ('BLANK', " "),
         ('BBY', "Nouveau né (0 à 10 mois)"),
         ('GBA', "Nourrisson (10 mois à 2 ans)"),
         ('CHI', "Enfants de 2 à 6 ans"),
@@ -17,7 +15,6 @@ class Babysitter(models.Model):
     )
 
     TIME_TARGET_CHOICES = (
-        ('BLANK', " "),
         ('AM', "Matin"),
         ('PM', "Après-midi"),
         ('DAY', "Toute la journée"),
@@ -25,7 +22,6 @@ class Babysitter(models.Model):
     )
 
     GRADES_CHOICES = (
-        ('BLANK', " "),
         ('BAF', "BAFA"),
         ('DPE', "Diplôme de petite enfance"),
     )
@@ -44,42 +40,42 @@ class Babysitter(models.Model):
         "Profession",
         max_length=4,
         choices=JOB_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     age_target = models.CharField(
         "Tranche d'âge de l'enfant",
         max_length=4,
         choices=AGE_TARGET_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     time_target = models.CharField(
         "Moments de la journée",
         max_length=4,
         choices=TIME_TARGET_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     grade_main = models.CharField(
         "Premier diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     grade_sec = models.CharField(
         "2ème diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     grade_tri = models.CharField(
         "3ème diplôme (Si vous en disposez)",
         max_length=4,
         choices=GRADES_CHOICES,
-        default='BLANK',
+        blank=True,
     )
 
     aid_certificate_grade = models.BooleanField(
