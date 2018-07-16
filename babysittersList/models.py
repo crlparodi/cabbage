@@ -1,3 +1,4 @@
+from djmoney.models.fields import MoneyField
 from django.db import models
 from django.contrib import admin
 
@@ -88,7 +89,12 @@ class Babysitter(models.Model):
         default=False
     )
 
-    price = models.IntegerField("Tarifs de vos prestations", default=0)
+    price = MoneyField(
+        "Tarifs de vos prestations",
+        max_digits=10,
+        decimal_places=2,
+        default_currency='EUR',
+    )
 
     price_unit = models.CharField(
         "par",
