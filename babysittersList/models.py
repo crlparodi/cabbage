@@ -1,12 +1,27 @@
 from djmoney.models.fields import MoneyField
 from django.db import models
-from django.contrib import admin
 
-class Babysitter(models.Model):
+
+class User(models.Model):
     JOB_CHOICES = (
         ('MF', "Mère au Foyer"),
     )
 
+    name = models.CharField("Nom", max_length=42, default=" ", )
+    age = models.PositiveSmallIntegerField("Âge", default=0)
+    birth_location = models.CharField("Lieu de naissance", max_length=64, default=" ", )
+    job = models.CharField(
+        "Profession",
+        max_length=4,
+        choices=JOB_CHOICES,
+        blank=True,
+    )
+
+    def __str__(self):
+        return self.name
+
+
+class Babysitter(User):
     AGE_TARGET_CHOICES = (
         ('BBY', "Nouveau né (0 à 10 mois)"),
         ('GBA', "Nourrisson (10 mois à 2 ans)"),
@@ -34,14 +49,10 @@ class Babysitter(models.Model):
         ('WEE', "Semaine")
     )
 
-    nurse_name = models.CharField("Nom", max_length=42, default=" ",)
-    age = models.PositiveSmallIntegerField("Âge", default=0)
-    birth_location = models.CharField("Lieu de naissance", max_length=64, default=" ",)
-    job = models.CharField(
-        "Profession",
-        max_length=4,
-        choices=JOB_CHOICES,
-        blank=True,
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        parent_link=True,
     )
 
     age_target = models.CharField(
@@ -102,7 +113,3 @@ class Babysitter(models.Model):
         choices=TARIFICATION_UNIT,
         default='H',
     )
-
-    def __str__(self):
-        return self.nurse_name
-

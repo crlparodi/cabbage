@@ -1,17 +1,36 @@
 from django.contrib import admin
-from .models import Babysitter
+from .models import User, Babysitter
 
 
 # Register your models here.
 
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('name', 'birth_location', 'age')
+
+    fieldsets = (
+        ('Situation Personnelle', {
+            'fields': (
+                'name',
+                'age',
+                'birth_location'
+            )
+        }),
+        ('Parcours professionnel', {
+            'fields': (
+                'job',
+            )
+        }),
+    )
+
+
 class BabySitterAdmin(admin.ModelAdmin):
-    list_display = ('nurse_name', 'birth_location', 'age_target', 'time_target', 'price', 'price_unit')
+    list_display = ('name', 'birth_location', 'age_target', 'time_target', 'price', 'price_unit')
 
 
     fieldsets = (
         ('Situation Personnelle', {
             'fields': (
-                'nurse_name',
+                'name',
                 'age',
                 'birth_location'
             )
@@ -44,4 +63,5 @@ class BabySitterAdmin(admin.ModelAdmin):
     )
 
 
+admin.site.register(User, UserAdmin)
 admin.site.register(Babysitter, BabySitterAdmin)
