@@ -16,6 +16,10 @@ class User(models.Model):
 
     name = models.CharField("Nom", max_length=42, default=" ", )
     age = models.PositiveSmallIntegerField("Âge", default=0)
+    birth = models.DateField(
+        max_length=8,
+        default=timezone.now,
+    )
     birth_location = models.CharField("Lieu de naissance", max_length=64, default=" ", )
     job = models.CharField(
         "Profession",
