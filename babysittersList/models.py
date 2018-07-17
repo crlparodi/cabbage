@@ -1,5 +1,6 @@
 from djmoney.models.fields import MoneyField
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 class User(models.Model):
@@ -15,6 +16,14 @@ class User(models.Model):
         max_length=4,
         choices=JOB_CHOICES,
         blank=True,
+    )
+    phone = PhoneNumberField(
+        "Numéro de téléphone",
+        blank=True,
+    )
+    email = models.EmailField(
+        "Adresse électronique",
+        default=" ",
     )
 
     def __str__(self):

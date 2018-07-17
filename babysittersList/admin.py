@@ -5,7 +5,7 @@ from .models import User, Babysitter
 # Register your models here.
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('name', 'birth_location', 'age')
+    list_display = ('name', 'birth_location', 'age', 'phone', 'email', )
 
     fieldsets = (
         ('Situation Personnelle', {
@@ -20,6 +20,12 @@ class UserAdmin(admin.ModelAdmin):
                 'job',
             )
         }),
+        ('Contacts', {
+            'fields': (
+                'phone',
+                'email',
+            )
+        })
     )
 
 
