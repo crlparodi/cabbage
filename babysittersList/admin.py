@@ -5,7 +5,14 @@ from .models import User, Babysitter
 # Register your models here.
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('name', 'birth_location', 'birth', 'age', 'phone', 'email', 'creation_date', )
+    list_display = ('name',
+                    'birth_location',
+                    'birth',
+                    'age',
+                    'phone',
+                    'email',
+                    'creation_date',
+                    )
 
     fieldsets = (
         ('Situation Personnelle', {
@@ -31,7 +38,14 @@ class UserAdmin(admin.ModelAdmin):
 
 
 class BabySitterAdmin(admin.ModelAdmin):
-    list_display = ('name', 'birth_location', 'age_target', 'time_target', 'price', 'price_unit')
+    list_display = ('name',
+                    'birth_location',
+                    'age_target',
+                    'time_target',
+                    'location',
+                    'price',
+                    'price_unit',
+                    )
 
 
     fieldsets = (
@@ -39,13 +53,15 @@ class BabySitterAdmin(admin.ModelAdmin):
             'fields': (
                 'name',
                 'age',
+                'birth',
                 'birth_location'
             )
         }),
         ('Garde d\'enfants', {
                 'fields': (
                 'age_target',
-                'time_target'
+                'time_target',
+                'location',
             )
         }),
         ('Parcours professionnel', {
@@ -66,6 +82,17 @@ class BabySitterAdmin(admin.ModelAdmin):
             'fields': (
                 ('price', 'price_unit'),
             )
+        }),
+        ('Contacts', {
+            'fields': (
+                'phone',
+                'email',
+            )
+        }),
+        ('Réseaux sociaux professionnels', {
+            'fields': (
+                'linkedin',
+            ),
         }),
     )
 

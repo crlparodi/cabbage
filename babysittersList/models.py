@@ -11,16 +11,22 @@ class User(models.Model):
         ('CAP', "Cadre de la fonction publique"),
         ('AGP', "Agent de production"),
         ('ENS', "Enseignant"),
-        ('MF', "Mère au Foyer"),
+        ('MFO', "Mère au Foyer"),
+        ('RET', "Retraitée"),
     )
 
     name = models.CharField("Nom", max_length=42, default=" ", )
     age = models.PositiveSmallIntegerField("Âge", default=0)
     birth = models.DateField(
+        "Date de naissance",
         max_length=8,
         default=timezone.now,
     )
-    birth_location = models.CharField("Lieu de naissance", max_length=64, default=" ", )
+    birth_location = models.CharField(
+        "Lieu de naissance",
+        max_length=64,
+        blank=True,
+    )
     job = models.CharField(
         "Profession",
         max_length=4,
@@ -59,6 +65,12 @@ class Babysitter(User):
         ('EV', "Toute la soirée"),
     )
 
+    LOCATIONS = (
+        ('AIX', "Aix-en-Provence"),
+        ('MAR', "Marseille"),
+        ('AVG', "Avignon"),
+    )
+
     GRADES_CHOICES = (
         ('BAF', "BAFA"),
         ('DPE', "Diplôme de petite enfance"),
@@ -88,6 +100,13 @@ class Babysitter(User):
         "Moments de la journée",
         max_length=4,
         choices=TIME_TARGET_CHOICES,
+        blank=True,
+    )
+
+    location = models.CharField(
+        "Ville et environs",
+        max_length=4,
+        choices=LOCATIONS,
         blank=True,
     )
 
@@ -134,4 +153,9 @@ class Babysitter(User):
         max_length=4,
         choices=TARIFICATION_UNIT,
         default='H',
+    )
+
+    linkedin = models.URLField(
+        "Profil LinkedIn",
+        blank=True,
     )
