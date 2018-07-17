@@ -1,10 +1,16 @@
 from djmoney.models.fields import MoneyField
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+from django.utils import timezone
 
 
 class User(models.Model):
     JOB_CHOICES = (
+        ('CAD', "Cadre"),
+        ('CAS', "Cadre Supérieur"),
+        ('CAP', "Cadre de la fonction publique"),
+        ('AGP', "Agent de production"),
+        ('ENS', "Enseignant"),
         ('MF', "Mère au Foyer"),
     )
 
@@ -24,6 +30,9 @@ class User(models.Model):
     email = models.EmailField(
         "Adresse électronique",
         default=" ",
+    )
+    creation_date = models.DateTimeField(
+        default=timezone.now,
     )
 
     def __str__(self):
