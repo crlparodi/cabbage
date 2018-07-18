@@ -39,10 +39,9 @@ class UserAdmin(admin.ModelAdmin):
 
 class BabySitterAdmin(admin.ModelAdmin):
     list_display = ('name',
-                    'birth_location',
+                    'location',
                     'age_target',
                     'time_target',
-                    'location',
                     'price',
                     'price_unit',
                     )

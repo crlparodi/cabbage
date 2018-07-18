@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Données des Babysitters</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+        <table class="table table-sm table-striped table-responsive">
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Lieu de Garde</td>
+                    <td>Tranche d'Âge</td>
+                    <td>Tranche Horaire</td>
+                    <td>Prix</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for babysitter in babysitters %}
+                <tr>
+                    <td>{{ babysitter.name }}</td>
+                    <td>{{ babysitter.get_location_display }}</td>
+                    <td>{{ babysitter.get_age_target_display }}</td>
+                    <td>{{ babysitter.get_time_target_display }}</td>
+                    <td>{{ babysitter.price }} par {{ babysitter.get_price_unit_display }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+</body>
+</html>

@@ -15,8 +15,15 @@ class User(models.Model):
         ('RET', "Retraitée"),
     )
 
-    name = models.CharField("Nom", max_length=42, default=" ", )
-    age = models.PositiveSmallIntegerField("Âge", default=0)
+    name = models.CharField(
+        "Nom",
+        max_length=60,
+        default=" ",
+    )
+    age = models.PositiveSmallIntegerField(
+        "Âge",
+        default=0,
+    )
     birth = models.DateField(
         "Date de naissance",
         max_length=8,
@@ -77,10 +84,10 @@ class Babysitter(User):
     )
 
     TARIFICATION_UNIT = (
-        ('H', "Heure"),
-        ('DM', "Demi-Journée"),
-        ('DAY', "Jour"),
-        ('WEE', "Semaine")
+        ('TU1', "Heure"),
+        ('TU2', "Demi-Journée"),
+        ('TU3', "Jour"),
+        ('TU4', "Semaine")
     )
 
     user = models.OneToOneField(
@@ -133,12 +140,12 @@ class Babysitter(User):
 
     aid_certificate_grade = models.BooleanField(
         "Vous êtes titulaire d'un brevet de secourisme ?",
-        default=False
+        default=False,
     )
 
     criminal_record = models.BooleanField(
         "J'atteste sur l'honneur et déclare avoir un casier judiciaire (B1 et B2) vierge.\n(Notez toutefois que la famille de l'enfant peut demander une copie de vos deux casiers judiciaires.)",
-        default=False
+        default=False,
     )
 
     price = MoneyField(
@@ -159,3 +166,5 @@ class Babysitter(User):
         "Profil LinkedIn",
         blank=True,
     )
+
+

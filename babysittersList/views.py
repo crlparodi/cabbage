@@ -1,7 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from django.db.models.functions import Lower
+from .models import Babysitter
 
 
 # Create your views here.
-def home(request):
-    return render(request, 'babysittersList/home.html')
+def list(request):
+    babysitters = Babysitter.objects.all().order_by('price_unit', 'price')
+    return render(request, 'babysittersList/list.html', {'babysitters': babysitters})
