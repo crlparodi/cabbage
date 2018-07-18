@@ -7,3 +7,6 @@ from .models import Babysitter
 def list(request):
     babysitters = Babysitter.objects.all().order_by('price_unit', 'price')
     return render(request, 'babysittersList/list.html', {'babysitters': babysitters})
+
+def search(request):
+    return render(request, 'babysittersList/search.html', {})
