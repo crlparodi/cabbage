@@ -19,6 +19,8 @@ from babysittersList import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home),
     path('list/', views.list),
     path('search/', views.search),
+    path('results/', views.results),
 ]

@@ -5,7 +5,9 @@
     <title>Rechercher un(e) babysitter</title>
 </head>
 <body>
-    <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
-    <input type="text">
+    <form method="get" action="/results/">
+        <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
+        <input type="text" name="bar" value="{{ query }}"/>
+    </form>
 </body>
 </html>

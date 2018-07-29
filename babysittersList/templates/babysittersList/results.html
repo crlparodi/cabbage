@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultats pour "{{ query }}" - BlaBlaSitter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+{% if results %}
+    <table class="table table-sm table-striped table-responsive">
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Lieu de Garde</td>
+                    <td>Tranche d'Âge</td>
+                    <td>Tranche Horaire</td>
+                    <td>Prix</td>
+                </tr>
+            </thead>
+            <tbody>
+            {% for result in results %}
+                <tr>
+                    <td>{{ result.name }}</td>
+                    <td>{{ result.get_location_display }}</td>
+                    <td>{{ result.get_age_target_display }}</td>
+                    <td>{{ result.get_time_target_display }}</td>
+                    <td>{{ result.price }} par {{ result.get_price_unit_display }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+{% else %}
+    <h3 class='error' style="font-size: 14px; color: red;">Aucun Babysitter ne contient le champ suivant : "{{ query }}". Veuillez retenter une nouvelle recherche.</h3>
+    <form method="get" action="/results/">
+        <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
+        <input type="text" name="bar" value="{{ query }}"/>
+    </form>
+{% endif %}
+</body>
+</html>
