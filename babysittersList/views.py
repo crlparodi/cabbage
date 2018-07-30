@@ -15,13 +15,10 @@ def search(request):
     return render(request, 'babysittersList/search.html', {})
 
 def results(request):
-    query = request.GET.get('bar')
-    try:
-        query = str(query)
-    except ValueError:
-        query = None
+    query = str(request.GET.get('bar'))
+    if query.__len__() < 2:
         results = None
-    if query:
+    else:
         results = Babysitter.objects.filter(name__contains=query)
     return render(request, 'babysittersList/results.html', {"results": results, "query": query, })
 

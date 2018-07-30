@@ -6,8 +6,22 @@
 </head>
 <body>
     <form method="get" action="/results/">
+        {% csrf_token %}
         <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
         <input type="text" name="bar" value="{{ query }}"/>
+        <select name="age_target" >
+            <option disabled selected value> -- Tranche d'âge -- </option>
+            {% for age_target in age_target %}
+                <option value="{{ age_target }}">X</option>
+            {% endfor %}
+        </select>
+        <!-- <select name="time_target" >
+            <option disabled selected value> -- Tranche horaire -- </option>
+            <option value="AM">Matin</option>
+            <option value="PM">Après-midi</option>
+            <option value="DAY">Toute la journée</option>
+            <option value="EV">Toute la soirée</option>
+        </select> -->
     </form>
 </body>
 </html>

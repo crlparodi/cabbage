@@ -30,7 +30,11 @@
             </tbody>
         </table>
 {% else %}
-    <h3 class='error' style="font-size: 14px; color: red;">Aucun Babysitter ne contient le champ suivant : "{{ query }}". Veuillez retenter une nouvelle recherche.</h3>
+    {% if query|length < 2 %}
+    <h3 class='error' style="font-size: 14px; color: red;">Votre saisie doit contenir au moins 2 caractères.</h3>
+    {% else %}
+    <h3 class='error' style="font-size: 14px; color: red;">Aucun nom de babysitter ne correspond à votre saisie. Veuillez retenter une nouvelle recherche.</h3>
+    {% endif %}
     <form method="get" action="/results/">
         <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
         <input type="text" name="bar" value="{{ query }}"/>
