@@ -2,6 +2,7 @@ from djmoney.models.fields import MoneyField
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
+from django import forms
 
 
 class User(models.Model):
