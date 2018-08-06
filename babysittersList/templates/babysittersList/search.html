@@ -5,23 +5,16 @@
     <title>Rechercher un(e) babysitter</title>
 </head>
 <body>
-    <form method="get" action="/results/">
+    <form method="post" action="/results/">
         {% csrf_token %}
-        <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter, tapez un nom:</label>
-        <input type="text" name="bar" value="{{ query }}"/>
-        <select name="age_target" >
-            <option disabled selected value> -- Tranche d'âge -- </option>
-            {% for age_target in age_target %}
-                <option value="{{ age_target }}">X</option>
-            {% endfor %}
-        </select>
-        <!-- <select name="time_target" >
-            <option disabled selected value> -- Tranche horaire -- </option>
-            <option value="AM">Matin</option>
-            <option value="PM">Après-midi</option>
-            <option value="DAY">Toute la journée</option>
-            <option value="EV">Toute la soirée</option>
-        </select> -->
+        <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter !</label>
+        <div style="margin: 10px 0;">
+            {{ forms.form_name.label }} : {{ forms.form_name }} <br>
+            {{ forms.form_age_target.label }} : {{ forms.form_age_target }} <br>
+            {{ forms.form_time_target.label }} : {{ forms.form_time_target }} <br>
+            {{ forms.form_location.label }} : {{ forms.form_location }} <br>
+        </div>
+        <input type="submit" value="Rechercher">
     </form>
 </body>
 </html>

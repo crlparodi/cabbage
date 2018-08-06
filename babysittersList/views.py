@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models.functions import Lower
-from .models import Babysitter, User
+from .models import *
 
 
 # Create your views here.
@@ -12,10 +12,11 @@ def list(request):
     return render(request, 'babysittersList/list.html', {'babysitters': babysitters})
 
 def search(request):
-    return render(request, 'babysittersList/search.html', {})
+    forms = SearchForm()
+    return render(request, 'babysittersList/search.html', {'forms': forms})
 
 def results(request):
-    query = str(request.GET.get('bar'))
+    query = str(request.POST.get('bar'))
     if query.__len__() < 2:
         results = None
     else:

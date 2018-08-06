@@ -6,9 +6,8 @@ from .models import User, Babysitter
 
 class UserAdmin(admin.ModelAdmin):
     list_display = ('name',
-                    'birth_location',
                     'birth',
-                    'age',
+                    'birth_location',
                     'phone',
                     'email',
                     'creation_date',
@@ -18,7 +17,6 @@ class UserAdmin(admin.ModelAdmin):
         ('Situation Personnelle', {
             'fields': (
                 'name',
-                'age',
                 'birth',
                 'birth_location'
             )
@@ -51,7 +49,6 @@ class BabySitterAdmin(admin.ModelAdmin):
         ('Situation Personnelle', {
             'fields': (
                 'name',
-                'age',
                 'birth',
                 'birth_location'
             )
