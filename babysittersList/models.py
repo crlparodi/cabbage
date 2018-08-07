@@ -6,6 +6,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.utils import timezone
 from django import forms
 
+""" Data Components """
 JOB_CHOICES = (
     ('CAD', "Cadre"),
     ('CAS', "Cadre Supérieur"),
@@ -24,6 +25,8 @@ AGE_TARGET_CHOICES = (
     ('TEE', "Enfants de 12 ans et plus"),
 )
 
+AGE_TARGET_EMPTY = (('', ''), ) + AGE_TARGET_CHOICES
+
 TIME_TARGET_CHOICES = (
     ('AM', "Matin"),
     ('PM', "Après-midi"),
@@ -31,11 +34,15 @@ TIME_TARGET_CHOICES = (
     ('DI', "Toute la journée"),
 )
 
+TIME_TARGET_EMPTY = (('', ''), ) + TIME_TARGET_CHOICES
+
 LOCATIONS = (
     ('AIX', "Aix-en-Provence"),
     ('MAR', "Marseille"),
     ('AVG', "Avignon"),
 )
+
+LOCATIONS_EMPTY = (('', ''), ) + LOCATIONS
 
 GRADES_CHOICES = (
     ('BAF', "BAFA"),
@@ -200,25 +207,26 @@ class Babysitter(User):
 
 
 class SearchForm(forms.Form):
-    form_name = forms.CharField(
+    name = forms.CharField(
         label="Nom du babysitter",
         max_length=100,
+        required=False,
     )
 
-    form_age_target = forms.MultipleChoiceField(
+    age_target = forms.ChoiceField(
         label="Tranche d'Âge",
-        widget=forms.Select,
-        choices=AGE_TARGET_CHOICES,
+        choices=AGE_TARGET_EMPTY,
+        required=False,
     )
 
-    form_time_target = forms.MultipleChoiceField(
+    time_target = forms.ChoiceField(
         label="Disponibilité",
-        widget=forms.Select,
-        choices=TIME_TARGET_CHOICES,
+        choices=TIME_TARGET_EMPTY,
+        required=False,
     )
 
-    form_location = forms.MultipleChoiceField(
+    location = forms.ChoiceField(
         label="Ville",
-        widget=forms.Select,
-        choices=LOCATIONS,
+        choices=LOCATIONS_EMPTY,
+        required=False,
     )

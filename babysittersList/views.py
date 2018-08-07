@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import Http404
 from django.db.models.functions import Lower
 from .models import *
 
@@ -12,14 +13,24 @@ def list(request):
     return render(request, 'babysittersList/list.html', {'babysitters': babysitters})
 
 def search(request):
-    forms = SearchForm()
-    return render(request, 'babysittersList/search.html', {'forms': forms})
+    form = SearchForm()
+    return render(request, 'babysittersList/search.html', {'form': form})
 
 def results(request):
-    query = str(request.POST.get('bar'))
-    if query.__len__() < 2:
-        results = None
-    else:
-        results = Babysitter.objects.filter(name__contains=query)
-    return render(request, 'babysittersList/results.html', {"results": results, "query": query, })
+    try:
+        forms = SearchForm(request.POST)
+        results = Babysitter.objects.filter(
+            name__contains=forms['name'].data,
+            age_target__contains=forms['age_target'].data,
+            time_target__contains=forms['time_target'].data,
+            location__contains=forms['location'].data,
+        )
+    except ValueError:
+        raise Http404("Oops ! "
+                      "La recherche semble avoir échoué pour des raisons techniques. "
+                      "Veuillez réessayer.")
+
+
+    return render(request, 'babysittersList/results.html', {"results": results, "name": forms['name'].data})
+
 

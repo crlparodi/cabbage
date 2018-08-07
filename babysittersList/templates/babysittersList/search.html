@@ -5,14 +5,10 @@
     <title>Rechercher un(e) babysitter</title>
 </head>
 <body>
-    <form method="post" action="/results/">
+    <form action="/results/" method="post">
         {% csrf_token %}
-        <label for="Rechercher un(e) babysitter">Recherchez un(e) babysitter !</label>
         <div style="margin: 10px 0;">
-            {{ forms.form_name.label }} : {{ forms.form_name }} <br>
-            {{ forms.form_age_target.label }} : {{ forms.form_age_target }} <br>
-            {{ forms.form_time_target.label }} : {{ forms.form_time_target }} <br>
-            {{ forms.form_location.label }} : {{ forms.form_location }} <br>
+            {{ form.as_p }}
         </div>
         <input type="submit" value="Rechercher">
     </form>
