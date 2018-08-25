@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultats pour "{{ forms.name.data }}"</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+{% if qs %}
+    <table class="table table-sm table-stripped table-responsive">
+        <thead>
+            <tr>
+                <td>Nom</td>
+                <td>Ville</td>
+                <td>Tranche d'âge</td>
+                <td>Disponibilité</td>
+                <td>Tarif</td>
+            </tr>
+        </thead>
+        <tbody>
+        {% for qs in qs %}
+            <tr>
+                <td>{{ qs.member.full_name }}</td>
+                <td>{{ qs.get_location_display }}</td>
+                <td>{{ qs.get_age_target_display }}</td>
+                <td>{{ qs.get_time_target_display }}</td>
+                <td>{{ qs.price }} par {{ qs.get_price_unit_display }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <h3 class='error' style="font-size: 14px; color: red;">Aucun nom de babysitter ne correspond à votre saisie.
+    Veuillez réessayer.</h3>
+    <form action="/results/" method="post">
+        {% csrf_token %}
+        <div style="margin: 10px 0;">
+            {{ forms.as_p }}
+        </div>
+        <input type="submit" value="Rechercher">
+    </form>
+{% endif %}
+</body>
+</html>

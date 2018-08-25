@@ -41,7 +41,7 @@ class MemberAdminCreationForm(forms.ModelForm):
         password1 = self.cleaned_data.get("password1")
         password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
-            pass
+            raise forms.ValidationError("Les mots de passes ne correspondent pas.")
         return password2
 
     def save(self, commit=True):
@@ -50,7 +50,6 @@ class MemberAdminCreationForm(forms.ModelForm):
         user.set_password(self.cleaned_data.get("password1"))
         if commit:
             user.save()
-            print("User saved")
         return user
 
 

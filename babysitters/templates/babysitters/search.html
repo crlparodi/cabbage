@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechercher un(e) babysitter</title>
+</head>
+<body>
+    <form action="/results/" method="post">
+        {% csrf_token %}
+        <div style="margin: 10px 0;">
+            {{ form.as_p }}
+        </div>
+        <input type="submit" value="Rechercher">
+    </form>
+</body>
+</html>
+

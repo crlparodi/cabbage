@@ -18,7 +18,7 @@ class Babysitter(models.Model):
     member = models.OneToOneField(Member, on_delete=models.CASCADE, null=True, related_name="babysitter_profile", verbose_name="Membre")
 
     # Personnal infos (MANDATORY - OBLIGATOIRE)
-    location = models.CharField(verbose_name="Ville et environs", max_length=4, choices=components.LOCATIONS, blank=True, )
+    location = models.CharField(verbose_name="Ville et environs", max_length=4, choices=components.LOCATIONS, null=False, )
     criminal_record = models.BooleanField(verbose_name="Casier Judiciaire (B1/B2) vierge", default=False, )
 
     # Other personnal informations
@@ -40,12 +40,13 @@ class Babysitter(models.Model):
     linkedin = models.URLField(verbose_name="Profil LinkedIn", blank=True, )
     viadeo = models.URLField(verbose_name="Profil Viadeo", blank=True, )
 
-    REQUIRED_FIELDS = ['location', 'criminal_record', ]
-
     class Meta:
         # Rebranding the Model for Administration Site
-        verbose_name = "Babysitter"
+        verbose_name = 'Babysitter'
         verbose_name_plural = "Babysitters"
+
+    def __str__(self):
+        return self.member.__str__()
 
 
 # Create and setup empty Babysitter Profile,
