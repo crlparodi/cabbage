@@ -2,14 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63e30450-7da9-41ce-8491-4cfe371cb40a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/babysitting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/babysitting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babysittersList/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/babysittersList/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babysittersList/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/babysittersList/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babysittersList/templates/babysittersList/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/babysittersList/templates/babysittersList/results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babysittersList/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/babysittersList/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0002_auto_20180710_1913.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0003_auto_20180710_1943.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0004_auto_20180710_2045.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0005_auto_20180711_2011.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0006_auto_20180712_1419.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0007_auto_20180712_1751.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0008_auto_20180712_1753.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0009_auto_20180712_1755.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0010_auto_20180712_1757.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0011_auto_20180712_1759.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0012_auto_20180716_1318.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0012_auto_20180716_1732.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0013_merge_20180716_1830.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0014_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0015_auto_20180716_1850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0016_auto_20180716_2100.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0017_auto_20180716_2106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0018_auto_20180716_2208.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0019_user_phone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0020_auto_20180717_1301.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0021_auto_20180717_1302.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0022_user_email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0023_auto_20180717_1813.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0024_user_creation_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0025_user_birth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0026_babysitter_linkedin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0027_auto_20180717_1944.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0028_auto_20180717_1954.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0029_auto_20180718_0937.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0030_auto_20180718_1425.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0031_auto_20180718_1614.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/0032_auto_20180806_1320.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/babysittersList/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,142 +77,151 @@
     <session id="1149347900">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="7" />
-          <entry key="py" value="4" />
+          <entry key="html" value="13" />
+          <entry key="py" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="7" />
-          <entry key="Python" value="4" />
+          <entry key="HTML" value="13" />
+          <entry key="Python" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="922" />
-          <entry key="py" value="2656" />
+          <entry key="Python Console" value="54" />
+          <entry key="dummy" value="6" />
+          <entry key="html" value="2709" />
+          <entry key="py" value="26707" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="922" />
-          <entry key="Python" value="2656" />
+          <entry key="HTML" value="2709" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="26761" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49420443">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysittersList/admin.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/babysittersList/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#44#0" expanded="true" />
-                    <marker date="1533558766778" expanded="true" signature="5358:5363" ph="..." />
-                    <marker date="1533558766778" expanded="true" signature="5358:5458" ph="..." />
-                    <marker date="1533558766778" expanded="true" signature="5358:5896" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysittersList/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysitting/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#647#679#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/home.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="23" column="60" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="60" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/results.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/babysitters/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1535134534411" expanded="true" signature="448:454" ph="..." />
+                <marker date="1535134534411" expanded="true" signature="448:1400" ph="..." />
+                <marker date="1535134534411" expanded="true" signature="2628:2633" ph="..." />
+                <marker date="1535134534411" expanded="true" signature="2930:3079" ph="..." />
+                <marker date="1535134534411" expanded="true" signature="3240:3241" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/babysitters/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="99" lean-forward="true" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1535145800244" expanded="true" signature="91:96" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/babysitting/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/babysitters/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1535211419382" expanded="true" signature="193:324" ph="..." />
+                <marker date="1535211419382" expanded="true" signature="346:351" ph="..." />
+                <marker date="1535211419382" expanded="true" signature="464:993" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/babysitters/templates/babysitters/results.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/babysitters/templates/babysitters/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>id</find>
+      <find>set_password</find>
+      <find>form</find>
+      <find>add_form</find>
+      <find>get_form</find>
+      <find>change</find>
+      <find>AdminSite</find>
+      <find>cl</find>
+      <find>ChangeForm</find>
+      <find>Change</find>
+      <find>ChangeList</find>
+      <find>Meta</find>
+      <find>_meta</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -189,23 +229,44 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/babysitting/settings.py" />
-        <option value="$PROJECT_DIR$/babysitting/urls.py" />
         <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/home.html" />
         <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/list.html" />
+        <option value="$PROJECT_DIR$/babysittersList/blank.html" />
+        <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/blank.html" />
+        <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html" />
         <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/results.html" />
-        <option value="$PROJECT_DIR$/babysittersList/admin.py" />
+        <option value="$PROJECT_DIR$/babysittersList/authentification.py" />
+        <option value="$PROJECT_DIR$/babysittersList/forms.py" />
+        <option value="$PROJECT_DIR$/babysittersList/search.py" />
         <option value="$PROJECT_DIR$/babysittersList/views.py" />
         <option value="$PROJECT_DIR$/babysittersList/models.py" />
-        <option value="$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html" />
+        <option value="$PROJECT_DIR$/babysittersList/admin.py" />
+        <option value="$PROJECT_DIR$/babysitting/settings.py" />
+        <option value="$PROJECT_DIR$/babysitters/components.py" />
+        <option value="$PROJECT_DIR$/accounts/admin.py" />
+        <option value="$PROJECT_DIR$/accounts/meta.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/babysitters/forms.py" />
+        <option value="$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/options.py" />
+        <option value="$PROJECT_DIR$/babysitters/models.py" />
+        <option value="$PROJECT_DIR$/babysitters/admin.py" />
+        <option value="$PROJECT_DIR$/babysitters/search.py" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/home.html" />
+        <option value="$PROJECT_DIR$/babysitters/templates/babysitters/list.html" />
+        <option value="$PROJECT_DIR$/babysitters/templates/babysitters/search.html" />
+        <option value="$PROJECT_DIR$/babysitting/urls.py" />
+        <option value="$PROJECT_DIR$/babysitters/views.py" />
+        <option value="$PROJECT_DIR$/babysitters/templates/babysitters/results.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
+    <option name="x" value="1364" />
     <option name="y" value="25" />
-    <option name="width" value="1370" />
-    <option name="height" value="720" />
+    <option name="width" value="1924" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -213,7 +274,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="babysitters" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,7 +300,31 @@
             <path>
               <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
               <item name="babysitting" type="462c0819:PsiDirectoryNode" />
-              <item name="babysittersList" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="babysitting" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="babysitting" type="462c0819:PsiDirectoryNode" />
+              <item name="babysitters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="babysitting" type="462c0819:PsiDirectoryNode" />
+              <item name="babysitters" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="babysitting" type="462c0819:PsiDirectoryNode" />
+              <item name="babysitters" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="babysitters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="babysitting" type="b2602c69:ProjectViewProjectNode" />
@@ -239,9 +339,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/babysittersList/templates/babysittersList" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -296,29 +402,57 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="25" width="1370" height="720" extended-state="6" />
-    <editor active="true" />
+    <frame x="1364" y="25" width="1924" height="1032" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16579926" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14533965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32888147" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32554257" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25542572" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
+      <window_info anchor="bottom" x="1637" y="168" width="1378" height="749" id="Terminal" order="7" type="WINDOWED" weight="0.2854758" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32888147" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32888147" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32888147" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14533965" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32554257" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32888147" />
+      <window_info active="true" anchor="bottom" x="0" y="50" width="1920" height="1005" id="Terminal" order="7" type="WINDOWED" visible="true" weight="0.2854758" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32888147" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32888147" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32888147" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -330,83 +464,325 @@
       </provider>
     </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/django/db/models/fields/__init__.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py" />
     <entry file="file://C:/Python36-32/Lib/site-packages/django/apps/registry.py" />
     <entry file="file://C:/Python36-32/Lib/site-packages/django/db/models/base.py" />
+    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/blank.html" />
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/home.html" />
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/list.html" />
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/search.html" />
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/results.html" />
+    <entry file="file://$PROJECT_DIR$/babysitters/authentification.py" />
+    <entry file="file://$PROJECT_DIR$/babysitting/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4257">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/babysitting/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="201">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babysitting/urls.py">
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="1458">
+          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/meta.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="391" column="8" selection-start-line="391" selection-start-column="8" selection-end-line="391" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10790">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3457">
+          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-2068458911/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="5243" column="8" selection-start-line="5243" selection-start-column="8" selection-end-line="5243" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
-            <element signature="e#647#679#0" expanded="true" />
+            <element signature="e#1402#3428#0" />
+            <element signature="e#3485#3906#0" />
+            <element signature="e#3952#8221#0" />
+            <element signature="e#8293#8762#0" />
+            <element signature="e#8808#10275#0" />
+            <element signature="e#10322#10535#0" />
+            <element signature="e#10591#11512#0" />
+            <element signature="e#11569#13793#0" />
+            <element signature="e#13845#15628#0" />
+            <element signature="e#15675#17528#0" />
+            <element signature="e#17578#17920#0" />
+            <element signature="e#17979#18423#0" />
+            <element signature="e#18471#18757#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/admin.py">
+    <entry file="file://$PROJECT_DIR$/babysitters/components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="213">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/home.html">
+    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="1222">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#20#44#0" expanded="true" />
+            <marker date="1535064259099" expanded="true" signature="1084:1089" ph="..." />
+            <marker date="1535064259099" expanded="true" signature="1708:1717" ph="..." />
+            <marker date="1535064259099" expanded="true" signature="2307:2316" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/search.html">
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/options.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="335">
+          <caret line="1143" column="33" selection-start-line="1143" selection-start-column="33" selection-end-line="1143" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#3894#22511#0" />
+            <element signature="e#23575#23689#0" />
+            <element signature="e#23722#23792#0" />
+            <element signature="e#23857#24806#0" />
+            <element signature="e#24840#26018#0" />
+            <element signature="e#26062#26084#0" />
+            <element signature="e#26129#26560#0" />
+            <element signature="e#26610#27067#0" />
+            <element signature="e#27131#27178#0" />
+            <element signature="e#27255#29334#0" />
+            <element signature="e#29393#29565#0" />
+            <element signature="e#29623#30607#0" />
+            <element signature="e#30680#31280#0" />
+            <element signature="e#31344#31781#0" />
+            <element signature="e#31848#32265#0" />
+            <element signature="e#32335#32526#0" />
+            <element signature="e#32634#32708#0" />
+            <element signature="e#32772#33278#0" />
+            <element signature="e#33340#33844#0" />
+            <element signature="e#33912#34436#0" />
+            <element signature="e#34482#34639#0" />
+            <element signature="e#34778#35543#0" />
+            <element signature="e#35617#36251#0" />
+            <element signature="e#36297#36931#0" />
+            <element signature="e#37019#37390#0" />
+            <element signature="e#37434#38517#0" />
+            <element signature="e#38568#38707#0" />
+            <element signature="e#38778#39234#0" />
+            <element signature="e#39284#39459#0" />
+            <element signature="e#39517#39679#0" />
+            <element signature="e#39731#39893#0" />
+            <element signature="e#39969#42137#0" />
+            <element signature="e#42193#42865#0" />
+            <element signature="e#42951#43104#0" />
+            <element signature="e#43238#44293#0" />
+            <element signature="e#44351#44549#0" />
+            <element signature="e#44613#44703#0" />
+            <element signature="e#44755#44851#0" />
+            <element signature="e#44911#44989#0" />
+            <element signature="e#45059#45154#0" />
+            <element signature="e#45225#45692#0" />
+            <element signature="e#48075#51278#0" />
+            <element signature="e#51333#54653#0" />
+            <element signature="e#54715#55467#0" />
+            <element signature="e#55532#56292#0" />
+            <element signature="e#56352#59221#0" />
+            <element signature="e#59292#60778#0" />
+            <element signature="e#60840#61456#0" />
+            <element signature="e#61548#62622#0" />
+            <element signature="e#62684#63169#0" />
+            <element signature="e#63253#63748#0" />
+            <element signature="e#63867#64016#0" />
+            <element signature="e#64103#68621#0" />
+            <element signature="e#68968#69040#0" />
+            <element signature="e#69105#69340#0" />
+            <element signature="e#69410#69956#0" />
+            <element signature="e#70046#76982#0" />
+            <element signature="e#77042#77234#0" />
+            <element signature="e#77331#77466#0" />
+            <element signature="e#77539#79775#0" />
+            <element signature="e#79853#81384#0" />
+            <element signature="e#81448#82554#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1535144347424" expanded="true" signature="2344:2353" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1535126182569" expanded="true" signature="366:367" ph="..." />
+            <marker date="1535126182569" expanded="true" signature="914:915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding>
+            <marker date="1535146137659" expanded="true" signature="56:61" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysitters/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="99" lean-forward="true" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1535145800244" expanded="true" signature="91:96" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1535134534411" expanded="true" signature="448:454" ph="..." />
+            <marker date="1535134534411" expanded="true" signature="448:1400" ph="..." />
+            <marker date="1535134534411" expanded="true" signature="2628:2633" ph="..." />
+            <marker date="1535134534411" expanded="true" signature="2930:3079" ph="..." />
+            <marker date="1535134534411" expanded="true" signature="3240:3241" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysitters/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babysittersList/models.py">
+    <entry file="file://$PROJECT_DIR$/babysitting/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+        <state relative-caret-position="390">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysitters/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <marker date="1533558766778" expanded="true" signature="5358:5363" ph="..." />
-            <marker date="1533558766778" expanded="true" signature="5358:5458" ph="..." />
-            <marker date="1533558766778" expanded="true" signature="5358:5896" ph="..." />
+            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babysitters/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1535211419382" expanded="true" signature="193:324" ph="..." />
+            <marker date="1535211419382" expanded="true" signature="346:351" ph="..." />
+            <marker date="1535211419382" expanded="true" signature="464:993" ph="..." />
           </folding>
         </state>
       </provider>
