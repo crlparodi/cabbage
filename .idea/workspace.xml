@@ -1,102 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e30450-7da9-41ce-8491-4cfe371cb40a" name="Default" comment="" />
+    <list default="true" id="63e30450-7da9-41ce-8491-4cfe371cb40a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-cabbage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-cabbage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/accounts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/accounts/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/accounts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/authentication/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/authentication/views/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/navigation/views/templates/navigation/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/navigation/views/templates/navigation/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/var/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="604260567">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="553" />
-          <entry key="Python" value="565" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open" />
-      <usages-collector id="statistics.file.extensions.open" />
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="553" />
-          <entry key="py" value="565" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1149347900">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="2" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="20" />
-          <entry key="md" value="2" />
-          <entry key="py" value="169" />
-          <entry key="sqlite3" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="20" />
-          <entry key="Markdown" value="2" />
-          <entry key="Python" value="169" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="54" />
-          <entry key="dummy" value="11" />
-          <entry key="html" value="2709" />
-          <entry key="md" value="4" />
-          <entry key="py" value="26975" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="2709" />
-          <entry key="Markdown" value="4" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="27029" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../project-cabbage/core/settings.py">
+        <entry file="file://$PROJECT_DIR$/core/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-988">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="792">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/models.py">
+        <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -109,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -129,6 +82,10 @@
       <find>ChangeList</find>
       <find>Meta</find>
       <find>_meta</find>
+      <find>base_fields</find>
+      <find>errorlist</find>
+      <find>login</find>
+      <find>LoginView</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,23 +124,30 @@
         <option value="$PROJECT_DIR$/babysitting/urls.py" />
         <option value="$PROJECT_DIR$/babysitters/views.py" />
         <option value="$PROJECT_DIR$/babysitters/templates/babysitters/results.html" />
-        <option value="$PROJECT_DIR$/../project-cabbage/docs/README.md" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/authentication/views/templates/authentication.html" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/views.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/views.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/core/urls.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/navigation/search/apps.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/navigation/views/views.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/apps/authentication/views/views.py" />
-        <option value="$PROJECT_DIR$/../project-cabbage/core/settings.py" />
+        <option value="$PROJECT_DIR$/docs/README.md" />
+        <option value="$PROJECT_DIR$/apps/authentication/views/templates/authentication.html" />
+        <option value="$PROJECT_DIR$/apps/authentication/babysitters/views.py" />
+        <option value="$PROJECT_DIR$/apps/authentication/accounts/views.py" />
+        <option value="$PROJECT_DIR$/apps/navigation/search/apps.py" />
+        <option value="$PROJECT_DIR$/apps/navigation/views/views.py" />
+        <option value="$PROJECT_DIR$/apps/authentication/views/templates/authentication/success.html" />
+        <option value="$PROJECT_DIR$/apps/authentication/accounts/forms.py" />
+        <option value="$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/apps/authentication/views/templates/authentication/authentication.html" />
+        <option value="$PROJECT_DIR$/apps/authentication/views/templates/authentication/login.html" />
+        <option value="$PROJECT_DIR$/core/settings.py" />
+        <option value="$PROJECT_DIR$/core/urls.py" />
+        <option value="$PROJECT_DIR$/apps/authentication/views/views.py" />
+        <option value="$PROJECT_DIR$/apps/navigation/views/templates/navigation/home.html" />
+        <option value="$PROJECT_DIR$/apps/authentication/babysitters/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-2" />
-    <option name="y" value="25" />
-    <option name="width" value="1924" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="y" value="9" />
+    <option name="width" value="954" />
+    <option name="height" value="1067" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -191,22 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="babysitters" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,12 +183,54 @@
             <path>
               <item name="project-cabbage" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-cabbage" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="babysitters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-cabbage" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-cabbage" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-cabbage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-cabbage" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-cabbage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-cabbage" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-cabbage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-cabbage" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="babysitting" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="babysitters" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -253,18 +243,18 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps/navigation/views" />
+      <recent name="$PROJECT_DIR$/apps/navigation/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps/navigation/views/templates/navigation" />
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps/authentication/views/templates/authentication" />
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps/navigation/search" />
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps/authentication" />
-      <recent name="$PROJECT_DIR$/../project-cabbage/apps" />
+      <recent name="$PROJECT_DIR$/apps/navigation/views/templates/navigation" />
+      <recent name="$PROJECT_DIR$/apps/authentication/views/templates/authentication" />
+      <recent name="$PROJECT_DIR$/apps/navigation/search" />
+      <recent name="$PROJECT_DIR$/apps/authentication" />
+      <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -280,27 +270,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project-cabbage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,93 +289,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <module name="project-cabbage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -438,10 +320,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="25" width="1924" height="1032" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="4" width="1368" height="765" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14533965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25837678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -461,317 +342,222 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/authentication/views/views.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python36-32/Lib/site-packages/django/apps/registry.py" />
-    <entry file="file://C:/Python36-32/Lib/site-packages/django/db/models/base.py" />
-    <entry file="file://$PROJECT_DIR$/babysittersList/templates/babysittersList/blank.html" />
-    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/home.html" />
-    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/list.html" />
-    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/search.html" />
-    <entry file="file://$PROJECT_DIR$/babysitters/templates/babysittersList/results.html" />
-    <entry file="file://$PROJECT_DIR$/babysitters/authentification.py" />
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/core/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4257">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/meta.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="391" column="8" selection-start-line="391" selection-start-column="8" selection-end-line="391" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10790">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3457">
-          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-2068458911/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="5243" column="8" selection-start-line="5243" selection-start-column="8" selection-end-line="5243" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1143" column="33" selection-start-line="1143" selection-start-column="33" selection-end-line="1143" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/core/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/var/db.sqlite3">
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/models.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/forms/models.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/options.py" />
+    <entry file="file://$PROJECT_DIR$/var/db.sqlite3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="90" column="4" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/apps.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/admin.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-78">
           <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="e#20#44#0" expanded="true" />
-            <marker date="1535064259099" expanded="true" signature="1084:1089" ph="..." />
-            <marker date="1535064259099" expanded="true" signature="1708:1717" ph="..." />
-            <marker date="1535064259099" expanded="true" signature="2307:2316" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/tests.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/migrations/__init__.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/migrations/0001_initial.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#47#87#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/forms.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1535126182569" expanded="true" signature="366:367" ph="..." />
-            <marker date="1535126182569" expanded="true" signature="914:915" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/tests.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="90" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1535309648971" expanded="true" signature="488:494" ph="..." />
-            <marker date="1535309648971" expanded="true" signature="488:1440" ph="..." />
-            <marker date="1535309648971" expanded="true" signature="2668:2673" ph="..." />
-            <marker date="1535309648971" expanded="true" signature="2970:3119" ph="..." />
-            <marker date="1535309648971" expanded="true" signature="3280:3281" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/views/templates/authentication.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/views/templates/navigation/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/views/templates/navigation/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/views/templates/authentication/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/views/templates/navigation/home.html">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/views/templates/authentication.html" />
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/views.py" />
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/views.py" />
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/docs/README.md" />
+    <entry file="file://$PROJECT_DIR$/apps/navigation/search/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/navigation/views/templates/navigation/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/navigation/views/templates/navigation/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/forms/utils.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-2068458911/builtins.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/forms/forms.py" />
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/authentication/views/templates/authentication/success.html" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/templates/registration/login.html" />
+    <entry file="file://$PROJECT_DIR$/apps/authentication/views/templates/authentication/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/__init__.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/__init__.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/main.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/autocomplete.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/admin/views/decorators.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/views/generic/edit.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/__init__.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/views.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/SandBox/venv/lib/python3.6/site-packages/django/contrib/auth/forms.py" />
+    <entry file="file://$PROJECT_DIR$/apps/navigation/views/templates/navigation/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/authentication/views/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" lean-forward="true" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/babysitters/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
           <folding>
-            <marker date="1535144347424" expanded="true" signature="2344:2353" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/core/urls.py">
+    <entry file="file://$PROJECT_DIR$/apps/navigation/views/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="126">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
-            <element signature="e#640#672#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/search/apps.py">
+    <entry file="file://$PROJECT_DIR$/apps/navigation/search/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="72">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/search/forms.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/views/templates/authentication/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="144">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1535309648927" expanded="true" signature="111:116" ph="..." />
+            <element signature="e#640#677#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/views/views.py">
+    <entry file="file://$PROJECT_DIR$/core/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#22#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/navigation/views/views.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="682">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="156">
-            <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/core/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/core/settings.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/babysitters/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-988">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project-cabbage/apps/authentication/accounts/models.py">
+    <entry file="file://$PROJECT_DIR$/apps/authentication/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Bienvenue</title>
-</head>
-<body>
+{% extends "base/base_generic.html" %}
 
-</body>
-</html>
+{% block title %}Accueil - project-cabbage{% endblock title %}
+
+{% block content %}
+    <p>
+	{% if is_logged %}
+		{{ user.full_name }} <br/> {{ user.email }}
+	{% else %}
+		Not connected
+	{% endif %}
+	</p>
+    <br/>
+	{% if user.is_authenticated %}
+		<a href="{% url 'password_change' %}">CHANGE PASSWORD</a>
+		<a href="{% url 'logout' %}">LOGOUT</a>
+	{% else %}
+		<a href="{% url 'cabbage_login_check' %}">LOGIN</a>
+	{% endif %}
+{% endblock %}

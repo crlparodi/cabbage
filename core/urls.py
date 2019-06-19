@@ -1,7 +1,4 @@
 """core URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,15 +10,40 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.urls import include, path
 from django.contrib import admin
-from django.urls import path
-from apps.authentication.views.views import *
+from django.contrib.auth import views as auth_views
+from django.contrib.admin.views.decorators import staff_member_required
 from apps.navigation.views.views import *
+from apps.authentication.views.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),        # django.contrib.admin.site.urls
-    path('', home),                         # apps.navigation.views.views.home
-    path('list/', show_db_list),            # apps.authentication.views.views.show_db_list
-    path('search/', search),                # apps.navigation.views.views.search
-    path('results/', results),              # apps.navigation.views.views.results
+    # ADMIN
+    # django.contrib.admin.site.urls
+    path('admin/', admin.site.urls),
+    # HOME
+    # apps.navigation.views.views.home
+    path('', home, name='home'),
+    # AUTHENTICATION
+    # path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/login/check/',
+         cabbage_login_check,
+         name='cabbage_login_check'),
+    path('accounts/login/',
+         CabbageLoginView.as_view(),
+         name='login'),
+    path('accounts/logout/',
+         CabbageLogoutView.as_view(),
+         name='logout'),
+    path('accounts/password_change/',
+         CabbagePasswordChangeView.as_view(),
+         name='password_change'),
+    path('accounts/password_change_done/',
+         CabbagePasswordChangeDone.as_view(),
+         name='password_change_done'),
+    # NAVIGATION
+    # apps.navigation.views.views.search
+    path('search/', search),
+    # apps.navigation.views.views.results
+    path('results/', results),
 ]

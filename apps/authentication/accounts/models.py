@@ -25,32 +25,39 @@ class MemberManager(BaseUserManager):
         return member_obj
 
     def create_babysitter_user(self, email, full_name, password=None):
-        babysitter_obj = self.create_member(email, full_name, password=password, is_babysitter=True)
+        babysitter_obj = self.create_member(
+            email, full_name, password=password, is_babysitter=True)
         return babysitter_obj
 
     def create_staff_user(self, email, full_name, password=None):
-        staff_obj = self.create_member(email, full_name, password=password, is_staff=True)
+        staff_obj = self.create_member(
+            email, full_name, password=password, is_staff=True)
         return staff_obj
 
     def create_superuser(self, email, full_name, password=None):
-        su_obj = self.create_member(email, full_name, password=password, is_staff=True, is_admin=True)
+        su_obj = self.create_member(
+            email, full_name, password=password, is_staff=True, is_admin=True)
         return su_obj
 
 
 class Member(AbstractBaseUser):
 
     # Base user profile settings (MANDATORY - OBLIGATOIRE)
-    email = models.EmailField(verbose_name='Adresse Mail', max_length=255, unique=True)
-    full_name = models.CharField(verbose_name='Nom et Prénom', max_length=255)
+    email = models.EmailField(
+        verbose_name='Adresse Mail', max_length=255, unique=True)
+    full_name = models.CharField(verbose_name='Prénom et NOM', max_length=255)
 
     # Account set as Babysitter Profile
-    babysitter = models.BooleanField(verbose_name="Compte Babysitter", default=False)
+    babysitter = models.BooleanField(
+        verbose_name="Compte Babysitter", default=False)
 
     # User profile authorizations
     active_profile = models.BooleanField(verbose_name='Actif', default=True)
     staff_profile = models.BooleanField(verbose_name='Staff', default=False)
-    admin_profile = models.BooleanField(verbose_name='Administrateur', default=False)
-    creation_date = models.DateField(verbose_name='Date de création', default=timezone.now)
+    admin_profile = models.BooleanField(
+        verbose_name='Administrateur', default=False)
+    creation_date = models.DateField(
+        verbose_name='Date de création', default=timezone.now)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['full_name', ]

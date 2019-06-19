@@ -71,3 +71,4 @@ def remove_babysitter_profile(sender, **kwargs):
 def setup_member_related_profile(sender, **kwargs):
     kwargs['instance'].member.babysitter = True
     kwargs['instance'].member.save()
+    

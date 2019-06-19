@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+#   Modèle utilisateur prédéfini, c'est le seul et l'unique.
+#   Il est impossible d'avoir plusieurs modèles utilisateurs
+# pour des raisons de sécurité.
 AUTH_USER_MODEL = 'accounts.Member'
+
+# Login URL redirection if success
+LOGIN_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -61,8 +67,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'apps/authentication/views/templates',
-            'apps/navigation/views/templates'
-                 ],
+            'apps/navigation/views/templates',
+            'apps/base/views/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -5,7 +5,11 @@ from apps.navigation.search.forms import SearchForm
 
 
 def home(request):
-    return render(request, 'navigation/home.html', {})
+    user = None
+    is_logged = request.user.is_authenticated
+    if request.user.is_authenticated:
+        user = request.user
+    return render(request, 'navigation/home.html', {'user': user, 'is_logged': is_logged})
 
 
 def search(request):
@@ -24,6 +28,7 @@ def results(request):
             location__contains=forms['location'].data
         )
     except ValueError:
-        raise Http404("Oops ! La recherche semble avoir échoué. Veuillez réessayer.")
+        raise Http404(
+            "Oops ! La recherche semble avoir échoué. Veuillez réessayer.")
 
     return render(request, 'navigation/results.html', {'qs': qs, 'forms': forms})

@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Résultats pour "{{ forms.name.data }}"</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-</head>
-<body>
+{% extends "base/base_generic.html" %}
+
+{% block title %}Résultats de la recherche pour {{ forms.name.data }} - project-cabbage{% endblock title %}
+
+{% block content %}
 {% if qs %}
     <table class="table table-sm table-stripped table-responsive">
         <thead>
@@ -40,5 +37,4 @@
         <input type="submit" value="Rechercher">
     </form>
 {% endif %}
-</body>
-</html>
+{% endblock %}

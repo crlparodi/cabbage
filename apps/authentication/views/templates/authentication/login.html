@@ -1,0 +1,38 @@
+{% extends "base/base_generic.html" %}
+
+{% block title %}Connexion - project-cabbage{% endblock %}
+
+{% block content %}
+    {% if form.errors %}
+        <p style="color: red;">Les indentifiants sont incorrects, veuillez réessayer...</p>
+    {% endif %}
+
+    {% if next %}
+        {% if user.is_authenticated %}
+        {% else %}
+            <p>Veuillez d'abord vous connecter...</p>
+        {% endif %}
+    {% endif %}
+
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <div>
+            <div>
+                {{ form.username.label_tag }}
+                <br/>
+                {{ form.username }}
+            </div>
+            <br/>
+            <div>
+                {{ form.password.label_tag }}
+                <br/>
+                {{ form.password }}
+            </div>
+        </div>
+        <br/>
+        <input type="submit" value="Se connecter">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+    <br/>
+    <a href=>Mot de passe oublié ?</a>
+{% endblock %}

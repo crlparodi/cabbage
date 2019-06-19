@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Rechercher un(e) babysitter</title>
-</head>
-<body>
+{% extends "base/base_generic.html" %}
+
+{% block title %}Recherche - project-cabbage{% endblock title %}
+
+{% block content %}
     <form action="/results/" method="post">
         {% csrf_token %}
         <div style="margin: 10px 0;">
@@ -12,6 +10,5 @@
         </div>
         <input type="submit" value="Rechercher">
     </form>
-</body>
-</html>
+{% endblock %}
 
