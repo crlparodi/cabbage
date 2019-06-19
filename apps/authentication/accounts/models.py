@@ -17,9 +17,9 @@ class MemberManager(BaseUserManager):
             full_name=full_name,
         )
         member_obj.set_password(password)
-        member_obj.babysitter = is_babysitter
-        member_obj.active_profile = is_active
-        member_obj.staff_profile = is_staff
+        member_obj.is_babysitter = is_babysitter
+        member_obj.is_active = is_active
+        member_obj.is_staff = is_staff
         member_obj.admin_profile = is_admin
         member_obj.save(using=self._db)
         return member_obj
@@ -48,12 +48,12 @@ class Member(AbstractBaseUser):
     full_name = models.CharField(verbose_name='Prénom et NOM', max_length=255)
 
     # Account set as Babysitter Profile
-    babysitter = models.BooleanField(
+    is_babysitter = models.BooleanField(
         verbose_name="Compte Babysitter", default=False)
 
     # User profile authorizations
-    active_profile = models.BooleanField(verbose_name='Actif', default=True)
-    staff_profile = models.BooleanField(verbose_name='Staff', default=False)
+    is_active = models.BooleanField(verbose_name='Actif', default=True)
+    is_staff = models.BooleanField(verbose_name='Staff', default=False)
     admin_profile = models.BooleanField(
         verbose_name='Administrateur', default=False)
     creation_date = models.DateField(
@@ -82,19 +82,19 @@ class Member(AbstractBaseUser):
         return True
 
     @property
-    def is_babysitter(self):
-        return self.babysitter
+    def babysitter(self):
+        return self.is_babysitter
 
     @property
-    def is_active(self):
-        return self.active_profile
+    def active(self):
+        return self.is_active
 
     @property
-    def is_staff(self):
-        return self.staff_profile
+    def staff(self):
+        return self.is_staff
 
     @property
-    def is_admin(self):
+    def admin(self):
         return self.admin_profile
 
     class Meta:

@@ -9,8 +9,9 @@ from .forms import MemberAdminCreationForm, MemberAdminChangeForm
 class MemberAdmin(BaseUserAdmin):
     search_fields = ('email', 'full_name',)
 
-    list_display = ('email', 'full_name', 'active_profile', 'babysitter', 'creation_date',)
-    list_filter = ('active_profile', 'staff_profile', 'admin_profile',)
+    list_display = ('email', 'full_name', 'is_active',
+                    'is_babysitter', 'creation_date',)
+    list_filter = ()
 
     filter_horizontal = ()
     ordering = ('full_name',)
@@ -26,7 +27,7 @@ class MemberAdmin(BaseUserAdmin):
             'fields': ('password', )
         }),
         ('User authorizations', {
-           'fields': ('active_profile', 'staff_profile', 'admin_profile', )
+            'fields': ('is_staff', 'admin_profile', )
         })
     )
     add_fieldsets = (
@@ -38,10 +39,10 @@ class MemberAdmin(BaseUserAdmin):
             'fields': ('password1', 'password2', )
         }),
         ('Ce compte est-il Babysitter ?', {
-            'fields': ('babysitter', )
+            'fields': ('is_babysitter', )
         }),
         ('User authorizations', {
-           'fields': ('active_profile', 'staff_profile', 'admin_profile', )
+            'fields': ('is_staff', 'admin_profile', )
         })
     )
 

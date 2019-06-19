@@ -1,7 +1,7 @@
 # accounts.forms.py
 from django import forms
 from django.contrib.auth import password_validation
-from django.contrib.auth.forms import ReadOnlyPasswordHashField, AuthenticationForm, PasswordChangeForm
+from django.contrib.auth.forms import ReadOnlyPasswordHashField, AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm
 from .models import Member
 
 
@@ -41,7 +41,7 @@ class MemberAdminCreationForm(forms.ModelForm):
 
     class Meta:
         model = Member
-        fields = ('email', 'full_name', 'babysitter', )
+        fields = ('email', 'full_name', 'is_babysitter', )
 
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
@@ -67,8 +67,8 @@ class MemberAdminChangeForm(forms.ModelForm):
         models = Member
         fields = ('email',
                   'full_name',
-                  'active_profile',
-                  'staff_profile',
+                  'is_active',
+                  'is_staff',
                   'admin_profile',)
 
     def clean_password(self):
@@ -105,3 +105,11 @@ class CabbagePasswordChangeForm(PasswordChangeForm):
         strip=False,
         widget=forms.PasswordInput,
     )
+
+
+class CabbagePasswordResetForm(PasswordResetForm):
+    pass
+
+
+class CabbageSetPasswordForm(SetPasswordForm):
+    pass

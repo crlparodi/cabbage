@@ -1,6 +1,6 @@
 {% extends "base/base_generic.html" %}
 
-{% block title %}Connexion - project-cabbage{% endblock %}
+{% block title %}Connexion{% endblock %}
 
 {% block content %}
     {% if form.errors %}
@@ -34,5 +34,5 @@
         <input type="hidden" name="next" value="{{ next }}">
     </form>
     <br/>
-    <a href=>Mot de passe oublié ?</a>
+    <a href={% url 'password_reset' %}>Mot de passe oublié ?</a>
 {% endblock %}
