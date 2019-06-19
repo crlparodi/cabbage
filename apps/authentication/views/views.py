@@ -1,5 +1,5 @@
 from django.http.response import HttpResponseRedirect
-from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView, PasswordChangeDoneView, PasswordResetView, PasswordResetDoneView, PasswordResetCompleteView
+from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView, PasswordChangeDoneView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView
 from apps.authentication.accounts.forms import CabbageLoginForm, CabbagePasswordChangeForm, CabbagePasswordResetForm, CabbageSetPasswordForm
 
 """ 
@@ -61,9 +61,9 @@ class CabbagePasswordResetDone(PasswordResetDoneView):
     template_name = 'authentication/password_reset_done.html'  # CUSTOM TEMPLATE
 
 
-class CabbagePasswordResetConfirm(PasswordResetDoneView):
+class CabbagePasswordResetConfirm(PasswordResetConfirmView):
     form_class = CabbageSetPasswordForm
-    template_name = 'authentication/password_reset_done.html'  # CUSTOM TEMPLATE
+    template_name = 'authentication/password_reset_confirm.html'  # CUSTOM TEMPLATE
 
 
 class CabbagePasswordResetComplete(PasswordResetCompleteView):
