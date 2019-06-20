@@ -4,6 +4,10 @@ from django.contrib.auth import password_validation
 from django.contrib.auth.forms import ReadOnlyPasswordHashField, AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm
 from .models import Member
 
+"""
+USER REGISTRATION FORMS
+"""
+
 
 class RegisterForm(forms.ModelForm):
     password1 = forms.CharField(widget=forms.PasswordInput)
@@ -24,13 +28,18 @@ class RegisterForm(forms.ModelForm):
         return email
 
     def clean_password2(self):
-        # Check that the two password entries match
+        # Vérifier que les deux mots de passe entrés correspondent l'un à l'autre
         password1 = self.cleaned_data.get("password1")
         password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
             raise forms.ValidationError(
                 "Les mots de passes ne correspondent pas.")
         return password2
+
+
+"""
+USER ADMIN CREATION & UPDATE FORMS
+"""
 
 
 class MemberAdminCreationForm(forms.ModelForm):
@@ -76,6 +85,11 @@ class MemberAdminChangeForm(forms.ModelForm):
         # peu importe le nouveau mot de passe que rentrera l'utilisateur.
         # C'est une couche de sécurité supplémentaire qui est apportée ici.
         return self.initial['password']
+
+
+"""
+USER LOGIN & UPDATE (PASSWORD CHANGE) FORMS
+"""
 
 
 class CabbageLoginForm(AuthenticationForm):

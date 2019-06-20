@@ -6,10 +6,21 @@ from apps.navigation.search.forms import SearchForm
 
 def home(request):
     user = None
+    babysitter = None
     is_logged = request.user.is_authenticated
+
     if request.user.is_authenticated:
         user = request.user
-    return render(request, 'navigation/home.html', {'user': user, 'is_logged': is_logged})
+        try:
+            babysitter = Babysitter.objects.get(member=user)
+        except:
+            pass
+    context = {
+        'user': user,
+        'babysitter': babysitter,
+        'is_logged': is_logged
+    }
+    return render(request, 'navigation/home.html', context)
 
 
 def search(request):

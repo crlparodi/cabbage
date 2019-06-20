@@ -1,9 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.utils import timezone
+from django.urls import reverse
+
+"""
+MEMBER USER CREATION MODEL
+"""
 
 
 class MemberManager(BaseUserManager):
+    # Member account creation
     def create_member(self, email, full_name, password=None, is_babysitter=False, is_active=True, is_staff=False, is_admin=False):
         if not email:
             raise ValueError("Une adresse mail est requise.")
@@ -12,6 +18,7 @@ class MemberManager(BaseUserManager):
         if not password:
             raise ValueError("Une mot de passe est requis.")
 
+        # Member object creation
         member_obj = self.model(
             email=self.normalize_email(email),
             full_name=full_name,
@@ -24,6 +31,7 @@ class MemberManager(BaseUserManager):
         member_obj.save(using=self._db)
         return member_obj
 
+    # Multiple user rights definitions
     def create_babysitter_user(self, email, full_name, password=None):
         babysitter_obj = self.create_member(
             email, full_name, password=password, is_babysitter=True)
@@ -38,6 +46,11 @@ class MemberManager(BaseUserManager):
         su_obj = self.create_member(
             email, full_name, password=password, is_staff=True, is_admin=True)
         return su_obj
+
+
+"""
+MEMBER USER MAIN MODEL
+"""
 
 
 class Member(AbstractBaseUser):
@@ -96,6 +109,10 @@ class Member(AbstractBaseUser):
     @property
     def admin(self):
         return self.admin_profile
+
+    # Provides a URL to get through the profile page
+    def get_absolute_url(self):
+        return reverse('member_details', kwargs={'pk': self.pk})
 
     class Meta:
         verbose_name = "Membre"

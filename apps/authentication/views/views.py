@@ -1,70 +1,51 @@
+from django.shortcuts import render
 from django.http.response import HttpResponseRedirect
-from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView, PasswordChangeDoneView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView
-from apps.authentication.accounts.forms import CabbageLoginForm, CabbagePasswordChangeForm, CabbagePasswordResetForm, CabbageSetPasswordForm
+from django.views.generic.edit import UpdateView
+
+from apps.authentication.accounts.models import Member
+from apps.authentication.babysitters.models import Babysitter
 
 """ 
 LOGIN PAGES 
 """
 
+# Verify if the user il already connected or not
+
 
 def cabbage_login_check(request):
-    """
-        Si l'utilisateur n'est pas connecté, il est redirigé vers la page de login.
-        Sinon, retour à l'accueil...
-    """
     if not request.user.is_authenticated:
         return HttpResponseRedirect('/accounts/login')
     else:
         return HttpResponseRedirect('/')
 
 
-class CabbageLoginView(LoginView):
-    form_class = CabbageLoginForm
-    template_name = 'authentication/login.html'  # CUSTOM TEMPLATE
-
-
 """ 
-LOGOUT PAGES 
+PROFILE PAGES
 """
 
 
-class CabbageLogoutView(LogoutView):
-    template_name = 'authentication/logged_out.html'  # CUSTOM TEMPLATE
+"""
+def profile_page(request):
+    if request.method == 'POST':
+        pass 
 
-
-""" 
-PASSWORD CHANGE PAGES 
+    if request.method == 'GET':
+        pass
 """
 
 
-class CabbagePasswordChangeView(PasswordChangeView):
-    form_class = CabbagePasswordChangeForm
-    template_name = 'authentication/password_change_form.html'  # CUSTOM TEMPLATE
+class CabbageUserProfileUpdate(UpdateView):
+    model = Member
+    fields = '__all__'
+    exclude = [
+        'is_active',
+        'is_staff',
+        'admin_profile',
+        'creation_date',
+    ]
 
 
-class CabbagePasswordChangeDone(PasswordChangeDoneView):
-    template_name = 'authentication/password_change_done.html'  # CUSTOM TEMPLATE
-
-
-""" 
-PASSWORD RESET PAGES 
-"""
-
-
-class CabbagePasswordResetView(PasswordResetView):
-    form_class = CabbagePasswordResetForm
-    subject_template_name = 'authentication/password_reset_subject.txt'  # CUSTOM TEMPLATE
-    template_name = 'authentication/password_reset_form.html'  # CUSTOM TEMPLATE
-
-
-class CabbagePasswordResetDone(PasswordResetDoneView):
-    template_name = 'authentication/password_reset_done.html'  # CUSTOM TEMPLATE
-
-
-class CabbagePasswordResetConfirm(PasswordResetConfirmView):
-    form_class = CabbageSetPasswordForm
-    template_name = 'authentication/password_reset_confirm.html'  # CUSTOM TEMPLATE
-
-
-class CabbagePasswordResetComplete(PasswordResetCompleteView):
-    template_name = 'authentication/password_reset_complete.html'  # CUSTOM TEMPLATE
+class CabbageBabysitterProfileUpdate(UpdateView):
+    model = Babysitter
+    fields = '__all__'
+    exclude = ['member', ]

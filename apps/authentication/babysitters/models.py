@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
+from django.urls import reverse
 
 # Models and Custom Search Components from project
 from apps.authentication.accounts.models import Member
@@ -10,13 +11,16 @@ from apps.authentication.babysitters import components
 from djmoney.models.fields import MoneyField
 from phonenumber_field.modelfields import PhoneNumberField
 
+"""
+MAIN BABYSITTER PROFILE MODEL (Under Condition: Be a babysitter)
+"""
 
-# Babysitter Model
+
 class Babysitter(models.Model):
 
     # Link from Member User Model
-    member = models.OneToOneField(Member, on_delete=models.CASCADE,
-                                  null=True, related_name="babysitter_profile", verbose_name="Membre")
+    member = models.ForeignKey(Member, on_delete=models.CASCADE,
+                               null=True)
 
     # Personnal infos (MANDATORY - OBLIGATOIRE)
     location = models.CharField(verbose_name="Ville et environs",
@@ -50,6 +54,9 @@ class Babysitter(models.Model):
     phone = PhoneNumberField("Numéro de téléphone", blank=True, )
     linkedin = models.URLField(verbose_name="Profil LinkedIn", blank=True, )
     viadeo = models.URLField(verbose_name="Profil Viadeo", blank=True, )
+
+    def get_absolute_url(self):
+        return reverse('babysitter_details', kwargs={'pk': self.pk})
 
     class Meta:
         # Rebranding the Model for Administration Site
