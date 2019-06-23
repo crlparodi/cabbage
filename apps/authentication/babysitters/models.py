@@ -1,5 +1,6 @@
+from django.contrib.auth import get_user_model
 from django.db import models
-from django.db.models.signals import post_save, pre_delete
+from django.db.models.signals import post_save, pre_delete, pre_save
 from django.dispatch import receiver
 from django.urls import reverse
 
@@ -19,8 +20,8 @@ MAIN BABYSITTER PROFILE MODEL (Under Condition: Be a babysitter)
 class Babysitter(models.Model):
 
     # Link from Member User Model
-    member = models.ForeignKey(Member, on_delete=models.CASCADE,
-                               null=True)
+    member = models.OneToOneField(get_user_model(), on_delete=models.CASCADE,
+                                  null=True)
 
     # Personnal infos (MANDATORY - OBLIGATOIRE)
     location = models.CharField(verbose_name="Ville et environs",

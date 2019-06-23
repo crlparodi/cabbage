@@ -1,0 +1,20 @@
+{% extends 'base/base_generic.html' %}
+
+{% block title %} {{ member.full_name }} {% endblock %}
+
+{% block content %}
+	<form method="POST">
+	{% csrf_token %}
+		{{ member_form.as_p }}
+		{% if babysitter %}
+			{{ babysitter_form.as_p }}
+		{% endif %}
+		<input type='submit' value='Mettre à jour'>
+	</form>
+	<br/>
+	<a href={% url 'password_change' %}>Changer le mot de passe</a>
+	<br/>
+	<a href={% url 'account_delete' %}>Supprimer le compte</a>
+	<br/>
+	<a href={% url 'home'%}>Accueil</a>
+{% endblock %}

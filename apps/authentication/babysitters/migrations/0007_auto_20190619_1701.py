@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterField(
             model_name='babysitter',
-            name='member',
+            name='accounts',
             field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='babysitter_profile', to=settings.AUTH_USER_MODEL, verbose_name='Membre'),
         ),
     ]

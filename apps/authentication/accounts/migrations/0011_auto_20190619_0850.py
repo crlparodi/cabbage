@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RenameField(
-            model_name='member',
+            model_name='accounts',
             old_name='babysitter',
             new_name='is_babysitter',
         ),

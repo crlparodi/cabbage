@@ -27,5 +27,5 @@ class BabysitterAdminChangeForm(forms.ModelForm):
 
     class Meta:
         model = Babysitter
-        exclude = ['member', 'criminal_record', ]
+        exclude = ['accounts', 'criminal_record', ]
 

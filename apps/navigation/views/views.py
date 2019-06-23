@@ -5,19 +5,10 @@ from apps.navigation.search.forms import SearchForm
 
 
 def home(request):
-    user = None
-    babysitter = None
+    user = request.user
     is_logged = request.user.is_authenticated
-
-    if request.user.is_authenticated:
-        user = request.user
-        try:
-            babysitter = Babysitter.objects.get(member=user)
-        except:
-            pass
     context = {
         'user': user,
-        'babysitter': babysitter,
         'is_logged': is_logged
     }
     return render(request, 'navigation/home.html', context)
@@ -33,7 +24,7 @@ def results(request):
         forms = SearchForm(request.POST)
         qs = Babysitter.objects.filter(
             member__full_name__contains=forms['name'].data,
-            # we are picking the 'full_name' attribute from the OneToOneField member
+            # we are picking the 'full_name' attribute from the OneToOneField accounts
             age_target__contains=forms['age_target'].data,
             time_target__contains=forms['time_target'].data,
             location__contains=forms['location'].data

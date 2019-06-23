@@ -1,0 +1,12 @@
+{% extends 'base/base_generic.html' %}
+
+{% block title %}Créer un compte{% endblock %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+            {{ member_form.as_p }}
+        <input type="submit" value="Créer le compte">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+{% endblock %}

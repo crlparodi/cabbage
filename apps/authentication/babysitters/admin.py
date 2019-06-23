@@ -5,15 +5,15 @@ from .forms import BabysitterAdminCreateForm, BabysitterAdminChangeForm
 
 @admin.register(Babysitter)
 class BabysitterAdmin(admin.ModelAdmin):
-    member = 'member'
-    list_display = (member, 'location', 'birth_date', 'age_target', 'time_target', 'phone', )
+    member = 'accounts'
+    list_display = ('member', 'location', 'birth_date', 'age_target', 'time_target', 'phone', )
 
     add_form = BabysitterAdminCreateForm
     change_form = BabysitterAdminChangeForm
 
     add_fieldsets = (
         ('Membre concerné', {
-            'fields': ('member', 'birth_date', ),
+            'fields': ('accounts', 'birth_date', ),
         }),
         ('Parcours scolaire et professionnel', {
             'fields': ('grade_main', 'grade_sec', 'aid_certificate_grade', )

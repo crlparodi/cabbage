@@ -1,7 +1,12 @@
-from django.db import models
+from django.apps import apps
+from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.core.signals import setting_changed
+from django.db import models
+from django.dispatch import receiver
 from django.utils import timezone
 from django.urls import reverse
+
 
 """
 MEMBER USER CREATION MODEL
@@ -9,7 +14,9 @@ MEMBER USER CREATION MODEL
 
 
 class MemberManager(BaseUserManager):
+    use_in_migrations = True
     # Member account creation
+
     def create_member(self, email, full_name, password=None, is_babysitter=False, is_active=True, is_staff=False, is_admin=False):
         if not email:
             raise ValueError("Une adresse mail est requise.")
@@ -72,10 +79,10 @@ class Member(AbstractBaseUser):
     creation_date = models.DateField(
         verbose_name='Date de création', default=timezone.now)
 
+    objects = MemberManager()
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['full_name', ]
-
-    objects = MemberManager()
 
     def get_full_name(self):
         if not self.full_name:
@@ -110,10 +117,7 @@ class Member(AbstractBaseUser):
     def admin(self):
         return self.admin_profile
 
-    # Provides a URL to get through the profile page
-    def get_absolute_url(self):
-        return reverse('member_details', kwargs={'pk': self.pk})
-
     class Meta:
         verbose_name = "Membre"
         verbose_name_plural = "Membres"
+

@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='member',
+            model_name='accounts',
             name='username',
             field=models.CharField(default='BOUH', max_length=255, verbose_name="Nom d'utilisateur"),
         ),

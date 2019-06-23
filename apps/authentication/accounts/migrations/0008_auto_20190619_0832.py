@@ -11,17 +11,17 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='member',
+            model_name='accounts',
             name='is_active',
             field=models.BooleanField(default=True, verbose_name='Actif'),
         ),
         migrations.AddField(
-            model_name='member',
+            model_name='accounts',
             name='is_admin',
             field=models.BooleanField(default=False, verbose_name='Administrateur'),
         ),
         migrations.AddField(
-            model_name='member',
+            model_name='accounts',
             name='is_staff',
             field=models.BooleanField(default=False, verbose_name='Staff'),
         ),

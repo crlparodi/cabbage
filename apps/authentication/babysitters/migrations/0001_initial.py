@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
                 ('phone', phonenumber_field.modelfields.PhoneNumberField(blank=True, max_length=128, verbose_name='Numéro de téléphone')),
                 ('linkedin', models.URLField(blank=True, verbose_name='Profil LinkedIn')),
                 ('viadeo', models.URLField(blank=True, verbose_name='Profil Viadeo')),
-                ('member', models.OneToOneField(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='babysitter_profile', to=settings.AUTH_USER_MODEL)),
+                ('accounts', models.OneToOneField(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='babysitter_profile', to=settings.AUTH_USER_MODEL)),
             ],
             options={
                 'verbose_name': 'Babysitter',

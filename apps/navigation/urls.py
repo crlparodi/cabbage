@@ -8,9 +8,4 @@ urlpatterns = [
     path('search/', search),
     # apps.navigation.views.views.results
     path('results/', results),
-    # User Profile
-    path('profile/<int:pk>', CabbageUserProfileUpdate.as_view(),
-         name='member_details'),
-    path('profile/<int:pk>/babysitter',
-         CabbageBabysitterProfileUpdate.as_view(), name='babysitter_details'),
 ]

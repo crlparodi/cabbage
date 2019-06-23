@@ -6,6 +6,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="accounts.admin.BaseUserAdmin" />
+          <option value="apps.authentication.views.views.UserCreateView" />
         </list>
       </option>
     </inspection_tool>

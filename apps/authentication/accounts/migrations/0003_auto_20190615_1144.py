@@ -11,11 +11,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='member',
+            model_name='accounts',
             name='username',
         ),
         migrations.AlterField(
-            model_name='member',
+            model_name='accounts',
             name='full_name',
             field=models.CharField(max_length=255, verbose_name='Prénom et NOM'),
         ),

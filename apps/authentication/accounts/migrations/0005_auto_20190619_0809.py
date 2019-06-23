@@ -11,11 +11,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='member',
+            model_name='accounts',
             name='admin_profile',
         ),
         migrations.RemoveField(
-            model_name='member',
+            model_name='accounts',
             name='staff_profile',
         ),
     ]
