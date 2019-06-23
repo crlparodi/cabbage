@@ -1,15 +1,21 @@
-from django.shortcuts import render
+from django import template
 from django.http import Http404
+from django.shortcuts import render, get_object_or_404
 from apps.authentication.babysitters.models import Babysitter
 from apps.navigation.search.forms import SearchForm
 
+register = template.Library()
 
 def home(request):
     user = request.user
     is_logged = request.user.is_authenticated
+
+    search_form = SearchForm()
+
     context = {
         'user': user,
-        'is_logged': is_logged
+        'is_logged': is_logged,
+        'search_form': search_form
     }
     return render(request, 'navigation/home.html', context)
 
@@ -34,3 +40,7 @@ def results(request):
             "Oops ! La recherche semble avoir échoué. Veuillez réessayer.")
 
     return render(request, 'navigation/results.html', {'qs': qs, 'forms': forms})
+
+def display_babysitter(request, id):
+    babysitter = get_object_or_404(Babysitter, id=id)
+    return render(request, 'navigation/profile.html', {'babysitter': babysitter})

@@ -6,6 +6,6 @@
     <form method="post" action="{% url 'account_delete' %}">
         {% csrf_token %}
         <p>Êtes-vous sûr de vouloir supprimer ce compte ?</p>
-        <input type="submit" value="Oui, supprimer ce compte">
+        <input class="button success" type="submit" value="Oui, supprimer ce compte">
     </form>
 {% endblock %}

@@ -1,0 +1,13 @@
+.BabysitterProfile .BabysitterProfile-infos {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.BabysitterProfile .BabysitterProfile-infos p{
+    margin-bottom: 0;
+}
+
+.BabysitterProfile .BabysitterProfile-contact {
+    list-style-type: none;
+    margin-left: 0;
+}

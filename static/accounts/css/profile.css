@@ -1,0 +1,17 @@
+.success {
+    color: #3adb76;
+}
+
+.error {
+    color: red;
+}
+
+.Profile > form {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 640px) {
+    .Profile > form {
+        width: 60%;
+    }
+}

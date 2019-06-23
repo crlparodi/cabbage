@@ -3,18 +3,25 @@
 {% block title %} {{ member.full_name }} {% endblock %}
 
 {% block content %}
-	<form method="POST">
-	{% csrf_token %}
-		{{ member_form.as_p }}
-		{% if babysitter %}
-			{{ babysitter_form.as_p }}
-		{% endif %}
-		<input type='submit' value='Mettre à jour'>
-	</form>
+	{% if messages %}
+	<ul class="messages">
+		{% for message in messages %}
+			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
+	<section class="Profile">
+		<form method="POST">
+		{% csrf_token %}
+			{{ member_form.as_ul }}
+			{% if babysitter %}
+				{{ babysitter_form.as_ul }}
+			{% endif %}
+			<input class="button success" type='submit' value='Mettre à jour'>
+		</form>
+	</section>
 	<br/>
 	<a href={% url 'password_change' %}>Changer le mot de passe</a>
 	<br/>
 	<a href={% url 'account_delete' %}>Supprimer le compte</a>
-	<br/>
-	<a href={% url 'home'%}>Accueil</a>
 {% endblock %}

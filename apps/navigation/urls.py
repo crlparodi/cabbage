@@ -1,11 +1,9 @@
-from django.urls import include, path
+from django.urls import path
 from apps.navigation.views.views import *
-from apps.authentication.views.views import *
 
 urlpatterns = [
     path('', home, name='home'),
-    # apps.navigation.views.views.search
     path('search/', search),
-    # apps.navigation.views.views.results
     path('results/', results),
+    path('profile/<int:id>$', display_babysitter, name='babysitter_profile')
 ]

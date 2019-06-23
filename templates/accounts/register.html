@@ -6,7 +6,7 @@
     <form method="POST">
         {% csrf_token %}
             {{ member_form.as_p }}
-        <input type="submit" value="Créer le compte">
+        <input class="button success" type="submit" value="Créer le compte">
         <input type="hidden" name="next" value="{{ next }}">
     </form>
 {% endblock %}

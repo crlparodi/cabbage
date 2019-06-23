@@ -1,7 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-from django.db.models.signals import post_save, pre_delete, pre_save
+from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
+from django.test.signals import setting_changed
 from django.urls import reverse
 
 # Models and Custom Search Components from project
@@ -55,9 +56,6 @@ class Babysitter(models.Model):
     phone = PhoneNumberField("Numéro de téléphone", blank=True, )
     linkedin = models.URLField(verbose_name="Profil LinkedIn", blank=True, )
     viadeo = models.URLField(verbose_name="Profil Viadeo", blank=True, )
-
-    def get_absolute_url(self):
-        return reverse('babysitter_details', kwargs={'pk': self.pk})
 
     class Meta:
         # Rebranding the Model for Administration Site

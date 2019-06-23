@@ -1,0 +1,68 @@
+body {
+    font-family: "Lato", sans-serif !important;
+}
+
+h1, h2 {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    color: #3adb76;
+}
+
+a:hover {
+    color: #22bb5b;
+}
+
+.Header {
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+
+.Header .Header-content {
+    line-height: 60px;
+    padding: 10px 0;
+}
+
+.Header .Header-content .Logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.Header .Header-content .Logo a {
+    color: black;
+}
+
+.Header .Header-content .Logo a:hover {
+    color: #3adb76;
+}
+
+.Header .Header-content p {
+    height: 100%;
+    margin: 0;
+}
+
+.Header .Header-content .Links a {
+    margin-left: 10px;
+}
+
+.Content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Footer {
+    border-top: 1px solid black;
+}
+
+.Footer .Footer-container p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .Content {
+        margin: 0 30px;
+    }
+}

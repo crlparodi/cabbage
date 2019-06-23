@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- FOUNDATION MIN CSS & JS
+    <!-- FOUNDATION MIN CSS & JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css" integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg==" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw==" crossorigin="anonymous"></script>
-    --><meta charset="UTF-8">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <!-- CSS FILES -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'base/css/base_generic.css' %}">
+    <link rel="stylesheet" href="{% static 'accounts/css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'navigation/css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'navigation/css/profile_babysitter.css' %}">
+
+
+    <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - project-cabbage</title>
 </head>
 <body>
-    {% block content %}
+    <header class="Header">
+    <div class="Header-container grid-container">
+        <div class="Header-content grid-x grid-margin-x">
+            <div class="Logo cell auto"><a href="{% url 'home' %}">
+            project.cabbage
+            </a></div>
+            <div class="User cell shrink text-right">
+                <div>
+                    {% if request.user.is_authenticated %}
+                    <p>{{ request.user.full_name }}</p>
+                    <p>{{ request.user.email }}</p>
+                    {% else %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="Links cell shrink">
+                {% if request.user.is_authenticated %}
+                    <a href="{% url 'profile_page' %}">PROFILE</a>
+                    <a href="{% url 'logout' %}">LOGOUT</a>
+                {% else %}
+                    <a href="{% url 'cabbage_login_check' %}">LOGIN</a>
+                    <a href="{% url 'sign_up' %}">SIGN UP</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    </header>
+    {% block banner %}
+    {% endblock %}
 
+    <div class="Content grid-container">
+    {% block content %}
 	{% endblock %}
+    </div>
+    <footer class="Footer">
+        <div class="Footer-container grid-container">
+            <p class="text-center">© Cyril PARODI - Juin 2019</p>
+        </div>
+    </footer>
 </body>
 </html>

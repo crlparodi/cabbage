@@ -1,0 +1,50 @@
+{% extends 'base/base_generic.html' %}
+
+{% block title %}Profil de {{babysitter.member.full_name}}{% endblock %}
+
+{% block content %}
+    <section class="BabysitterProfile">
+        <h1>{{ babysitter.member.full_name }}</h1>
+        <ul class="BabysitterProfile-infos">
+            <li>
+                <strong>Ville et environs :</strong>
+                <p>{{ babysitter.get_location_display }}</p>
+            </li>
+            <li>
+                <strong>Diplômes liées à l'enfance :</strong>
+                <p>{{ babysitter.get_grade_main_display }}</p>
+                <p>{{ babysitter.get_grade_sec_display }}</p>
+                {% if babysitter.aid_certificate_grade %}
+                    <p>Brevet de secourisme</p>
+                {% endif %}
+            </li>
+            <li>
+                <strong>Tranche d'âge de garde :</strong>
+                <p>{{ babysitter.get_age_target_display }}</p>
+            </li>
+            <li>
+                <strong>Parties de la journée :</strong>
+                <p>{{ babysitter.get_time_target_display }}</p>
+            </li>
+            <li>
+                <strong>Tarif des prestations (négociables avec le babysitter) :</strong>
+                <p>{{ babysitter.price }} par {{ babysitter.get_price_unit_display }}</p>
+            </li>
+        </ul>
+        <ul class="BabysitterProfile-contact">
+            <strong>Contacter le babysitter</strong>
+            <li>
+                <strong>Téléphone :</strong>
+                <span>{{ babysitter.phone }}</span>
+            </li>
+            <li>
+                <strong>LinkedIn :</strong>
+                <span>{{ babysitter.linkedin }}</span>
+            </li>
+            <li>
+                <strong>Viadéo :</strong>
+                <span>{{ babysitter.viadeo }}</span>
+            </li>
+        </ul>
+    </section>
+{% endblock %}

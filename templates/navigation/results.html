@@ -17,7 +17,7 @@
         <tbody>
         {% for qs in qs %}
             <tr>
-                <td>{{ qs.member.full_name }}</td>
+                <td><a href="{% url 'babysitter_profile' id=qs.id %}">{{ qs.member.full_name }}</a></td>
                 <td>{{ qs.get_location_display }}</td>
                 <td>{{ qs.get_age_target_display }}</td>
                 <td>{{ qs.get_time_target_display }}</td>
