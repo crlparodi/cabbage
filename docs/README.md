@@ -4,10 +4,8 @@ Le projet présente une maquette impliquant une plateforme communautaire de baby
 
 Elle a pour but de montrer ce qu'il est possible de faire aujourd'hui avec un système en BackEnd sous Django. Aujourd'hui sur ce projet, il est possible de créer un compte, s'authentifier, changer son profil, monter un profil "babysitter", et enfin, le diffuser !
 
-![Home](https://user-images.githubusercontent.com/38188604/59980378-58bfc600-95f5-11e9-9bbe-c9bcf8d3a234.png)
-![SearchResults](https://user-images.githubusercontent.com/38188604/59980376-58bfc600-95f5-11e9-975b-220953ebd652.png)
-![Profile](https://user-images.githubusercontent.com/38188604/59980379-59585c80-95f5-11e9-91ad-acfd9d8f977a.png)
-![EditProfile](https://user-images.githubusercontent.com/38188604/59980377-58bfc600-95f5-11e9-977c-6ea7a59516a2.png)
+![log_and_search](https://user-images.githubusercontent.com/38188604/61109533-68f4f380-a485-11e9-808e-18a628b7d2ef.gif)
+![profile](https://user-images.githubusercontent.com/38188604/61109535-6abeb700-a485-11e9-93f6-40df5d2fb25f.gif)
 
 ### Pré-requis
 
@@ -23,10 +21,6 @@ Elle a pour but de montrer ce qu'il est possible de faire aujourd'hui avec un sy
 
 ### Tester le projet
 
-Dans le dossier racine du projet, exécuter les commandes suivantes.
-
-Sous Windows : `python manage.py runserver`
-
-Sous Linux, utiliser `python3`
+`python manage.py runserver`
 
 Lancer ensuite le lien suivant : [http://127.0.0.1:8000/](http://127.0.0.1:8000/)

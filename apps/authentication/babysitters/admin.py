@@ -13,7 +13,7 @@ class BabysitterAdmin(admin.ModelAdmin):
 
     add_fieldsets = (
         ('Membre concerné', {
-            'fields': ('accounts', 'birth_date', ),
+            'fields': ('member', 'birth_date', ),
         }),
         ('Parcours scolaire et professionnel', {
             'fields': ('grade_main', 'grade_sec', 'aid_certificate_grade', )
