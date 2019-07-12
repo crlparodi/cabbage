@@ -4,8 +4,11 @@ Le projet présente une maquette impliquant une plateforme communautaire de baby
 
 Elle a pour but de montrer ce qu'il est possible de faire aujourd'hui avec un système en BackEnd sous Django. Aujourd'hui sur ce projet, il est possible de créer un compte, s'authentifier, changer son profil, monter un profil "babysitter", et enfin, le diffuser !
 
-![log_and_search](https://user-images.githubusercontent.com/38188604/61109533-68f4f380-a485-11e9-808e-18a628b7d2ef.gif)
-![profile](https://user-images.githubusercontent.com/38188604/61109535-6abeb700-a485-11e9-93f6-40df5d2fb25f.gif)
+### Login et Recherche
+![login_and_search](https://user-images.githubusercontent.com/38188604/61128083-52649180-a4b1-11e9-8cf8-ec3990b0a2e5.gif)
+
+### Gestion du profil
+![profile_and_babysitter](https://user-images.githubusercontent.com/38188604/61128085-542e5500-a4b1-11e9-8ecf-73f11da30c9a.gif)
 
 ### Pré-requis
 
