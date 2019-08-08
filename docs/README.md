@@ -18,7 +18,6 @@ Elle a pour but de montrer ce qu'il est possible de faire aujourd'hui avec un sy
     • Les modèles d’utilisateurs sont en place.
     • Il est possible de s’authentifier.
     • Il est possible de rechercher un babysitter dans la base de données serveur.
-    • Il est possible d'observer une démo du site sur GitHub.
 
 ### Pistes d'Amélioration
 
