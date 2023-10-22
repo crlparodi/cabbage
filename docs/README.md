@@ -1,4 +1,4 @@
-![project-cabbage-logo](https://user-images.githubusercontent.com/38188604/59980445-34b0b480-95f6-11e9-8f69-51dd4373f3eb.png)
+# Cabbage - A Communautary Babysitting Website Mock-Up
 
 Le projet présente une maquette impliquant une plateforme communautaire de babysitting. Elle repose sur une base de données SQLite et l'intégralité du site est alimenté par une architecture serveur Django (Python).
 
