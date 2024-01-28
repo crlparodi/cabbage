@@ -21,7 +21,7 @@ MAIN BABYSITTER PROFILE MODEL (Under Condition: Be a babysitter)
 class Babysitter(models.Model):
 
     # Link from Member User Model
-    member = models.OneToOneField(get_user_model(), on_delete=models.CASCADE,
+    member = models.ForeignKey(get_user_model(), on_delete=models.CASCADE,
                                   null=True)
 
     # Personnal infos (MANDATORY - OBLIGATOIRE)

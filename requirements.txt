@@ -1,9 +1,11 @@
 Babel==2.11.0
 Django==2.2
+django-dotenv==1.4.2
 django-money==0.14.3
 django-phonenumber-field==6.0.0
 django-phonenumbers==1.0.1
 phonenumbers==8.13.23
+psycopg2-binary==2.8
 py-moneyed==1.2
 pytz==2023.3.post1
 sqlparse==0.4.4

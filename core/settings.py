@@ -27,12 +27,13 @@ def get_secret(key, default):
             return f.read()                                              
     return value                    
                                                                          
-SECRET_KEY = get_secret("SECRET_KEY", None) 
+# SECRET_KEY = get_secret("SECRET_KEY", None) 
+SECRET_KEY = os.environ.get("SECRET_KEY") 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.172']
+ALLOWED_HOSTS = ['192.168.1.172','localhost']
 
 
 # Application definition
@@ -98,6 +99,22 @@ DATABASES = {
     }
 }
 
+POSTGRES_HOST = os.environ.get('POSTGRES_HOST')
+POSTGRES_PORT = os.environ.get('POSTGRES_PORT')
+POSTGRES_DB = os.environ.get('POSTGRES_DB')
+POSTGRES_USER = os.environ.get('POSTGRES_USER')
+POSTGRES_PASSWD = os.environ.get('POSTGRES_PASSWD')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': POSTGRES_DB, 
+        'USER': POSTGRES_USER,
+        'PASSWORD': POSTGRES_PASSWD,
+        'HOST': POSTGRES_HOST,
+        'PORT': POSTGRES_PORT
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
