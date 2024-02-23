@@ -28,18 +28,6 @@ Elle a pour but de montrer ce qu'il est possible de faire aujourd'hui avec un sy
     • Possibilité de contacter le Babysitter directement sur le site.
     • Et bien d'autres...
 
-### Pré-requis
-
-`python` v.3.6.5
-
-`django-admin` v.2.1
-
-### Composants tiers
-
-`django-money` v.0.14.3 - [GitHub](https://github.com/django-money/django-money)
-
-`django-phonenumberfield` v.2.0.1 - [GitHub](https://github.com/stefanfoulis/django-phonenumber-field)
-
 ### Tester le projet
 
 `python manage.py runserver`
