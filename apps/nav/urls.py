@@ -1,5 +1,5 @@
 from django.urls import path, re_path
-from apps.navigation.views.views import *
+from apps.nav.views.views import *
 
 urlpatterns = [
     path('', home, name='home'),

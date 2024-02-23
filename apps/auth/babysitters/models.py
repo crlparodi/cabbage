@@ -6,8 +6,8 @@ from django.test.signals import setting_changed
 from django.urls import reverse
 
 # Models and Custom Search Components from project
-from apps.authentication.accounts.models import Member
-from apps.authentication.babysitters import components
+from apps.auth.accounts.models import Member
+from apps.auth.babysitters import components
 
 # Fields from third-party Django Components
 from djmoney.models.fields import MoneyField
@@ -47,10 +47,8 @@ class Babysitter(models.Model):
                                    max_length=4, choices=components.TIME_TARGET_CHOICES, blank=True, )
 
     # Service count
-    price = MoneyField(verbose_name="Tarifs de vos prestations",
-                       max_digits=10, decimal_places=2, default_currency='EUR', default='0')
-    price_unit = models.CharField(
-        verbose_name="par", max_length=4, choices=components.TARIFICATION_UNIT, default='H', )
+    price = MoneyField(verbose_name="Tarifs de vos prestations", max_digits=10, decimal_places=2, default_currency='EUR', default='0')
+    price_unit = models.CharField(verbose_name="par", max_length=4, choices=components.TARIFICATION_UNIT, default='H', )
 
     # Contacts
     phone = PhoneNumberField("Numéro de téléphone", blank=True, )

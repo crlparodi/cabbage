@@ -1,4 +1,4 @@
-from apps.authentication.babysitters.models import Babysitter
+from apps.auth.babysitters.models import Babysitter
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import UserChangeForm

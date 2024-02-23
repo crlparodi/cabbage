@@ -19,10 +19,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # NAVIGATION
-    # apps.navigation.urls
-    path('', include('apps.navigation.urls')),
+    # apps.nav.urls
+    path('', include('apps.nav.urls')),
 
     # AUTHENTICATION
     # apps.authentication.urls
-    path('accounts/', include('apps.authentication.urls')),
+    path('accounts/', include('apps.auth.urls')),
 ]

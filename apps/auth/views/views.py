@@ -6,11 +6,11 @@ from django.views.generic.edit import UpdateView, CreateView
 
 
 # Import Member and Babysitter Models
-from apps.authentication.accounts.models import Member
-from apps.authentication.babysitters.models import Babysitter
+from apps.auth.accounts.models import Member
+from apps.auth.babysitters.models import Babysitter
 
 # Import Member and Babysitter Profile Page Forms
-from apps.authentication.accounts_mgmt import forms
+from apps.auth.accounts_mgmt import forms
 
 # User is custom, so i have to get back the right user model
 from django.contrib.auth import get_user_model

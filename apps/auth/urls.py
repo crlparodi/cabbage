@@ -1,7 +1,7 @@
 from django.urls import include, path
 from django.contrib.auth import views as auth_views
-from apps.authentication.views.views import *
-from apps.authentication.accounts.forms import (
+from apps.auth.views.views import *
+from apps.auth.accounts.forms import (
     CabbageLoginForm,
     CabbagePasswordChangeForm,
     CabbagePasswordResetForm,

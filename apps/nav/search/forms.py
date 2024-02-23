@@ -1,5 +1,5 @@
 from django import forms
-from apps.authentication.babysitters import components
+from apps.auth.babysitters import components
 
 
 class SearchForm(forms.Form):

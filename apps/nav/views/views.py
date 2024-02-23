@@ -1,8 +1,8 @@
 from django import template
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
-from apps.authentication.babysitters.models import Babysitter
-from apps.navigation.search.forms import SearchForm
+from apps.auth.babysitters.models import Babysitter
+from apps.nav.search.forms import SearchForm
 
 register = template.Library()
 
