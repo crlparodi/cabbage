@@ -20,20 +20,27 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+def get_secret(key, default):                                            
+    value = os.getenv(key, default)                                      
+    if os.path.isfile(value):     
+        with open(value) as f:
+            return f.read()                                              
+    return value                    
+                                                                         
+# SECRET_KEY = get_secret("SECRET_KEY", None) 
+SECRET_KEY = os.environ.get("SECRET_KEY") 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS")]
 
 # Application definition
 
 INSTALLED_APPS = [
-    'apps.authentication.accounts',
-    'apps.authentication.babysitters',
-    'apps.navigation.search',
+    'apps.auth.accounts',
+    'apps.auth.babysitters',
+    'apps.nav.search',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -91,6 +99,30 @@ DATABASES = {
     }
 }
 
+# POSTGRES_HOST = os.environ.get('POSTGRES_HOST')
+# POSTGRES_PORT = os.environ.get('POSTGRES_PORT')
+# POSTGRES_DB = os.environ.get('POSTGRES_DB')
+# POSTGRES_USER = os.environ.get('POSTGRES_USER')
+# POSTGRES_PASSWD = os.environ.get('POSTGRES_PASSWD')
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': POSTGRES_DB, 
+#         'USER': POSTGRES_USER,
+#         'PASSWORD': POSTGRES_PASSWD,
+#         'HOST': POSTGRES_HOST,
+#         'PORT': POSTGRES_PORT
+#     }
+# }
+
+# Cache (Memcached)
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django.core.cache.backends.memcached.MemcachedCache",
+#         "LOCATION": "memcached:11211",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -129,6 +161,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
