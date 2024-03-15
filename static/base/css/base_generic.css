@@ -43,8 +43,17 @@ a:hover {
     margin: 0;
 }
 
-.Header .Header-content .Links a {
-    margin-left: 10px;
+.Header .Header-content .Links .Menu {
+    padding-left: 10px;
+}
+
+.Header .Header-content .Links .Menu button {
+    color: #3adb76;
+}
+
+.Header .Header-content .Links .Menu button:hover {
+    cursor: pointer;
+    color: #22bb5b;
 }
 
 .Content {
