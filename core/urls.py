@@ -23,6 +23,10 @@ urlpatterns = [
     path('', include('apps.nav.urls')),
 
     # AUTHENTICATION
-    # apps.authentication.urls
+    # apps.auth.urls
     path('accounts/', include('apps.auth.urls')),
+
+    # API
+    # apps.api.urls
+    path('api/', include('apps.api.urls')),
 ]
