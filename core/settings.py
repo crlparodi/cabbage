@@ -106,29 +106,29 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'var/db.sqlite3'),
-    }
-}
-
-# POSTGRES_HOST = os.environ.get('POSTGRES_HOST')
-# POSTGRES_PORT = os.environ.get('POSTGRES_PORT')
-# POSTGRES_DB = os.environ.get('POSTGRES_DB')
-# POSTGRES_USER = os.environ.get('POSTGRES_USER')
-# POSTGRES_PASSWD = os.environ.get('POSTGRES_PASSWD')
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': POSTGRES_DB, 
-#         'USER': POSTGRES_USER,
-#         'PASSWORD': POSTGRES_PASSWD,
-#         'HOST': POSTGRES_HOST,
-#         'PORT': POSTGRES_PORT
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'var/db.sqlite3'),
 #     }
 # }
+
+POSTGRES_HOST = os.environ.get('POSTGRES_HOST')
+POSTGRES_PORT = os.environ.get('POSTGRES_PORT')
+POSTGRES_DB = os.environ.get('POSTGRES_DB')
+POSTGRES_USER = os.environ.get('POSTGRES_USER')
+POSTGRES_PASSWD = os.environ.get('POSTGRES_PASSWD')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': POSTGRES_DB, 
+        'USER': POSTGRES_USER,
+        'PASSWORD': POSTGRES_PASSWD,
+        'HOST': POSTGRES_HOST,
+        'PORT': POSTGRES_PORT
+    }
+}
 
 # Cache (Memcached)
 # CACHES = {
