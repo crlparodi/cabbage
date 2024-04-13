@@ -8,6 +8,7 @@ django-phonenumbers==1.0.1
 django-upgrade==1.16.0
 djangorestframework==3.14.0
 drf-yasg==1.21.7
+gunicorn==21.2.0
 inflection==0.5.1
 packaging==24.0
 phonenumbers==8.13.30

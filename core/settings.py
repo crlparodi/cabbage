@@ -15,19 +15,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-def get_secret(key, default):                                            
-    value = os.getenv(key, default)                                      
-    if os.path.isfile(value):     
-        with open(value) as f:
-            return f.read()                                              
-    return value                    
-                                                                         
-# SECRET_KEY = get_secret("SECRET_KEY", None) 
 SECRET_KEY = os.environ.get("SECRET_KEY") 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -117,14 +108,14 @@ POSTGRES_HOST = os.environ.get('POSTGRES_HOST')
 POSTGRES_PORT = os.environ.get('POSTGRES_PORT')
 POSTGRES_DB = os.environ.get('POSTGRES_DB')
 POSTGRES_USER = os.environ.get('POSTGRES_USER')
-POSTGRES_PASSWD = os.environ.get('POSTGRES_PASSWD')
+POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD')
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': POSTGRES_DB, 
         'USER': POSTGRES_USER,
-        'PASSWORD': POSTGRES_PASSWD,
+        'PASSWORD': POSTGRES_PASSWORD,
         'HOST': POSTGRES_HOST,
         'PORT': POSTGRES_PORT
     }
