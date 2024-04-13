@@ -7,6 +7,8 @@ migrations/
 *.json
 var/
 
+docker-compose.yml
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django
 
@@ -143,6 +145,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.env.dist
 env/
 env310/
 venv/
