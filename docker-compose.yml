@@ -7,14 +7,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile 
-    image: cabbage:latest
+    image: cabbage:0.2.0
     env_file:
       - ".env"
     networks:
       - cabbage
     working_dir: /usr/src/cabbage
     ports:
-      - "80:80"
+      - "5000:5000"
     command: bash -c "bash migrate.sh && bash run.sh"
   postgres_db:
     image: postgres:latest

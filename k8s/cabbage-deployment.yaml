@@ -1,0 +1,134 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: cabbage
+  name: cabbage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cabbage
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (HEAD)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/cabbage: "true"
+        io.kompose.service: cabbage
+    spec:
+      containers:
+        - command:
+            - bash
+            - -c
+            - bash migrate.sh && bash run.sh
+          env:
+            - name: ALLOWED_HOSTS
+              valueFrom:
+                configMapKeyRef:
+                  key: ALLOWED_HOSTS
+                  name: env
+            - name: APPEND_SLASH
+              valueFrom:
+                configMapKeyRef:
+                  key: APPEND_SLASH
+                  name: env
+            - name: DEBUG
+              valueFrom:
+                configMapKeyRef:
+                  key: DEBUG
+                  name: env
+            - name: DJANGO_SUPERUSER_EMAIL
+              valueFrom:
+                configMapKeyRef:
+                  key: DJANGO_SUPERUSER_EMAIL
+                  name: env
+            - name: DJANGO_SUPERUSER_FULL_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: DJANGO_SUPERUSER_FULL_NAME
+                  name: env
+            - name: DJANGO_SUPERUSER_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  key: DJANGO_SUPERUSER_PASSWORD
+                  name: env
+            - name: POSTGRES_DB
+              valueFrom:
+                configMapKeyRef:
+                  key: POSTGRES_DB
+                  name: env
+            - name: POSTGRES_HOST
+              valueFrom:
+                configMapKeyRef:
+                  key: POSTGRES_HOST
+                  name: env
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  key: POSTGRES_PASSWORD
+                  name: env
+            - name: POSTGRES_PORT
+              valueFrom:
+                configMapKeyRef:
+                  key: POSTGRES_PORT
+                  name: env
+            - name: POSTGRES_USER
+              valueFrom:
+                configMapKeyRef:
+                  key: POSTGRES_USER
+                  name: env
+            - name: SECRET_KEY
+              valueFrom:
+                configMapKeyRef:
+                  key: SECRET_KEY
+                  name: env
+          image: cabbage:0.2.0
+          imagePullPolicy: IfNotPresent
+          name: cabbage
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
+            limits:
+              cpu: 300m
+              memory: 512Mi
+          workingDir: /usr/src/cabbage
+          volumeMounts:
+          - mountPath: /usr/src/cabbage/dist
+            name: static
+        - image: nginx:1.21-alpine
+          name: nginx
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
+            limits:
+              cpu: 300m
+              memory: 512Mi
+          volumeMounts:
+          - mountPath: /etc/nginx/conf.d
+            name: conf
+          - mountPath: /app/static
+            name: static
+      restartPolicy: Always
+
+      volumes:
+      - name: conf
+        configMap:
+          name: cabbage-nginx
+      - name: static
+        persistentVolumeClaim:
+          claimName: cabbage-pvc
+status: {}

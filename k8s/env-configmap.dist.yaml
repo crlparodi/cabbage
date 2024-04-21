@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+  ALLOWED_HOSTS: "*"
+  APPEND_SLASH: "True"
+  DEBUG: "1"
+  DJANGO_SUPERUSER_EMAIL: 
+  DJANGO_SUPERUSER_FULL_NAME: 
+  DJANGO_SUPERUSER_PASSWORD: 
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: postgres-db
+  POSTGRES_PASSWORD: 
+  POSTGRES_PORT: "5434"
+  POSTGRES_USER: postgres
+  SECRET_KEY: 
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: cabbage-env
+  name: env
