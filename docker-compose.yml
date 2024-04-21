@@ -16,6 +16,23 @@ services:
     ports:
       - "5000:5000"
     command: bash -c "bash migrate.sh && bash run.sh"
+    volumes:
+      - app-volume:/usr/src/cabbage/dist
+  web:
+    depends_on:
+      cabbage:
+        condition: service_started
+    image: nginx
+    volumes:
+      - app-volume:/app/static
+      - ./config/cabbage.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - "8080:80"
+    environment:
+      - NGINX_HOST=cabbage.salad
+      - NGINX_PORT=80
+    networks:
+      - cabbage
   postgres_db:
     image: postgres:latest
     command: -p 5434
@@ -35,3 +52,5 @@ services:
 networks:
   cabbage:
       driver: bridge
+volumes:
+  app-volume:

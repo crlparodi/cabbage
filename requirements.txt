@@ -8,7 +8,7 @@ django-phonenumbers==1.0.1
 django-upgrade==1.16.0
 djangorestframework==3.14.0
 drf-yasg==1.21.7
-gunicorn==21.2.0
+gunicorn==22.0.0
 inflection==0.5.1
 packaging==24.0
 phonenumbers==8.13.30
@@ -16,7 +16,7 @@ psycopg2-binary==2.9.9
 py-moneyed==3.0
 pytz==2024.1
 PyYAML==6.0.1
-sqlparse==0.4.4
+sqlparse==0.5.0
 tokenize-rt==5.2.0
 typing_extensions==4.9.0
 uritemplate==4.1.1
