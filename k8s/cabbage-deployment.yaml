@@ -24,11 +24,16 @@ spec:
         io.kompose.network/cabbage: "true"
         io.kompose.service: cabbage
     spec:
+      initContainers:
+        - name: check-db-ready
+          image: postgres:latest
+          command: ['sh', '-c', 
+            'until pg_isready -h postgres-db -p 5434; 
+            do echo waiting for database on host $POSTGRES_HOST; sleep 2; done;']
       containers:
-        - command:
-            - bash
-            - -c
-            - bash migrate.sh && bash run.sh
+        - name: cabbage
+          command: ["/bin/bash"]
+          args: ["-c", "/bin/bash migrate.sh && /bin/bash run.sh"]
           env:
             - name: ALLOWED_HOSTS
               valueFrom:
@@ -92,7 +97,6 @@ spec:
                   name: env
           image: cabbage:0.2.0
           imagePullPolicy: IfNotPresent
-          name: cabbage
           ports:
             - containerPort: 5000
           resources:
