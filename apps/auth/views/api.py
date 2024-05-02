@@ -37,12 +37,15 @@ class MemberViewSet(viewsets.ModelViewSet):
     def create(self, request):
         serializer = MemberCreateSerializer(data=request.data)
         data = {}
+        status = 200
         if serializer.is_valid():
             serializer.create()
             data['response'] = "Member successfully created."
+            status = 201
         else:
             data = serializer.errors
-        return Response(data)
+            status = 500
+        return Response(data, status)
 
     def update(self, request, email):
         serializer = MemberUpdateSerializer(data=request.data)
