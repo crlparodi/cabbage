@@ -10,6 +10,8 @@
 # Delete Babysitter (by Retrograde user) - OK
 # Delete Babysitter (by Removing Babysitter) - OK
 
+from apps.api.tasks import create_member, update_member
+
 from apps.auth.accounts.models import Member
 from apps.auth.babysitters.models import Babysitter
 from apps.auth.babysitters import components
@@ -61,19 +63,17 @@ class MemberCreateSerializer(serializers.ModelSerializer):
         password = self.validated_data['password']
         password2 = self.validated_data['password2']
 
-        member = Member(
-            email = self.validated_data['email'],
-            full_name = self.validated_data['full_name'],
-            is_babysitter = self.validated_data['is_babysitter'],
-            is_staff = self.validated_data['is_staff']
-        )
+        member = {
+            'email': self.validated_data['email'],
+            'full_name': self.validated_data['full_name'],
+            'is_babysitter': self.validated_data['is_babysitter'],
+            'is_staff': self.validated_data['is_staff']
+        }
 
         if password != password2:
             return serializers.ValidationError({"password": "Passwords must match."})
 
-        member.set_password(password)
-        member.save()
-        return member
+        create_member.apply_async((member, password))
 
     class Meta:
         model = Member
@@ -90,19 +90,15 @@ class MemberUpdateSerializer(serializers.ModelSerializer):
 
     def update(self, member=None):
         if member is not None:
-            member.is_babysitter = self.validated_data['is_babysitter']
-            member.is_staff = self.validated_data['is_staff']
+            member_data = {
+                'email': member.get_short_name(),
+                'is_babysitter': self.validated_data['is_babysitter'],
+                'is_staff': self.validated_data['is_staff']
+            }
         else:
             raise ValidationError
-
-        member.save()
-
-        if member.is_babysitter is True and not Babysitter.objects.filter(member_id=member.pk):
-            Babysitter.objects.create(member_id=member.pk)
-        else:
-            Babysitter.objects.get(member_id=member.pk).delete()
         
-        return member
+        update_member.apply_async((member_data,))
 
     class Meta:
         model = Member
