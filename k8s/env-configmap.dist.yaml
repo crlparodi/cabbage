@@ -11,6 +11,7 @@ data:
   POSTGRES_PASSWORD: 
   POSTGRES_PORT: "5434"
   POSTGRES_USER: postgres
+  CELERY_BROKER_URL: redis://redis:6379/0
   SECRET_KEY: 
 kind: ConfigMap
 metadata:

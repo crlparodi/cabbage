@@ -1,39 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: ReplicationController
 metadata:
-  annotations:
-    kompose.cmd: kompose convert
-    kompose.version: 1.22.0 (HEAD)
-  creationTimestamp: null
-  labels:
-    io.kompose.service: cabbage
-  name: cabbage
+  name: celery
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      io.kompose.service: cabbage
-  strategy: {}
   template:
     metadata:
-      annotations:
-        kompose.cmd: kompose convert
-        kompose.version: 1.22.0 (HEAD)
-      creationTimestamp: null
+      name: celery
       labels:
         io.kompose.network/cabbage: "true"
-        io.kompose.service: cabbage
+        app: celery
     spec:
-      initContainers:
-        - name: check-db-ready
-          image: postgres:latest
-          command: ['sh', '-c', 
-            'until pg_isready -h postgres-db -p 5434; 
-            do echo waiting for database on host $POSTGRES_HOST; sleep 2; done;']
       containers:
-        - name: cabbage
-          command: ["/bin/bash"]
-          args: ["-c", "/bin/bash migrate.sh && /bin/bash run.sh"]
+        - name: celery
+          image: cabbage:0.3.0
+          imagePullPolicy: IfNotPresent
+          command: ["/opt/env/bin/celery"]
+          args: ["-A", "core", "worker" ,"-l", "INFO"]
           env:
             - name: ALLOWED_HOSTS
               valueFrom:
@@ -100,8 +83,6 @@ spec:
                 configMapKeyRef:
                   key: SECRET_KEY
                   name: env
-          image: cabbage:0.3.0
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
           resources:
@@ -112,32 +93,3 @@ spec:
               cpu: 300m
               memory: 512Mi
           workingDir: /usr/src/cabbage
-          volumeMounts:
-          - mountPath: /usr/src/cabbage/dist
-            name: static
-        - image: nginx:1.21-alpine
-          name: nginx
-          ports:
-            - containerPort: 80
-          resources:
-            requests:
-              cpu: 200m
-              memory: 256Mi
-            limits:
-              cpu: 300m
-              memory: 512Mi
-          volumeMounts:
-          - mountPath: /etc/nginx/conf.d
-            name: conf
-          - mountPath: /app/static
-            name: static
-      restartPolicy: Always
-
-      volumes:
-      - name: conf
-        configMap:
-          name: cabbage-nginx
-      - name: static
-        persistentVolumeClaim:
-          claimName: cabbage-pvc
-status: {}
