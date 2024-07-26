@@ -276,4 +276,5 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# End of https://www.toptal.com/developers/gitignore/api/python,django
+# Ignore Kubernetes YAML Files
+k8s/
