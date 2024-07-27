@@ -7,6 +7,7 @@ pipeline {
         stage('build_docker') {
             steps {
                 script {
+		    echo env.TAG_NAME
                     cabbage_app = docker.build('cabbage:'env.TAG_NAME)
                 }
             }
