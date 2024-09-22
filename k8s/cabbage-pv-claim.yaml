@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: cabbage-pvc
 spec:
+  storageClassName: manual
   resources:
     requests:
       storage: 1Gi

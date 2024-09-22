@@ -100,7 +100,7 @@ spec:
                 configMapKeyRef:
                   key: SECRET_KEY
                   name: env
-          image: cabbage:0.3.0
+          image: docker-nexus.c-atmosphere.duckdns.org/cabbage:0.4.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000

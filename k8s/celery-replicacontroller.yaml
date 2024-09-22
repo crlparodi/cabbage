@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: celery
-          image: cabbage:0.3.0
+          image: docker-nexus.c-atmosphere.duckdns.org/cabbage:0.4.1
           imagePullPolicy: IfNotPresent
           command: ["/opt/env/bin/celery"]
           args: ["-A", "core", "worker" ,"-l", "INFO"]
