@@ -26,6 +26,9 @@ DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS")]
 
+CSRF_TRUSTED_ORIGINS = ['https://cabbage.c-atmosphere.duckdns.org']
+CSRF_COOKIE_DOMAIN = 'c-atmosphere.duckdns.org'
+
 # Application definition
 
 INSTALLED_APPS = [
