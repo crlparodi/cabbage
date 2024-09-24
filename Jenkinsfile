@@ -4,22 +4,30 @@ pipeline {
     }
 
     stages {
-        stage('build_docker') {
+        stage('test_ci_trigger') {
             steps {
                 script {
-                    cabbage_app = docker.build("cabbage:${env.TAG_NAME}")
+                    sh 'Test CI Trigger'
                 }
             }
         }
-        stage('upload_nexus') {
-            steps {
-                script {
-                    docker.withRegistry("http://192.168.122.223:8082", 'nexus-docker') {
-                        cabbage_app.push()
-                    }
-                }
-            }
-        }
+        // stage('build_docker') {
+        //     steps {
+        //         script {
+        //             cabbage_app = docker.build("cabbage:${env.TAG_NAME}")
+        //         }
+        //     }
+        // }
+        // stage('upload_nexus') {
+        //     steps {
+        //         script {
+        //             docker.withRegistry("http://192.168.122.223:8082", 'nexus-docker') {
+        //                 cabbage_app.push()
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
+
 
