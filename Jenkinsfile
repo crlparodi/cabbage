@@ -14,7 +14,8 @@ pipeline {
             }
             steps {
                 script {
-                cabbage_app = docker.build("cabbage:${tag}")
+                    echo "${tag}"
+                    cabbage_app = docker.build("cabbage:${tag}")
                 }
             }
         }
