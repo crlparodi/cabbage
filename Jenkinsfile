@@ -9,12 +9,11 @@ pipeline {
         stage('build_docker') {
             when {
                 expression {
-                    return tag != "";
+                    return tag != null;
                 }
             }
             steps {
                 script {
-                    echo "${tag}"
                     cabbage_app = docker.build("cabbage:${tag}")
                 }
             }
@@ -22,7 +21,7 @@ pipeline {
         stage('upload_nexus') {
             when {
                 expression {
-                    return tag != "";
+                    return tag != null;
                 }
             }
             steps {
