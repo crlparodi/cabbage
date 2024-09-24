@@ -9,7 +9,7 @@ pipeline {
         stage('build_docker') {
             when {
                 expression {
-                    return tag != NULL;
+                    return tag != "";
                 }
             }
             steps {
@@ -21,7 +21,7 @@ pipeline {
         stage('upload_nexus') {
             when {
                 expression {
-                    return tag != NULL;
+                    return tag != "";
                 }
             }
             steps {
