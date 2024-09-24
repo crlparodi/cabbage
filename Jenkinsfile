@@ -9,7 +9,7 @@ pipeline {
         stage('build_docker') {
             when {
                 expression {
-                    return tag != null;
+                    return tag != "null";
                 }
             }
             steps {
@@ -18,19 +18,19 @@ pipeline {
                 }
             }
         }
-        stage('upload_nexus') {
-            when {
-                expression {
-                    return tag != null;
-                }
-            }
-            steps {
-                script {
-                    docker.withRegistry("http://192.168.122.223:8082", 'nexus-docker') {
-                        cabbage_app.push()
-                    }
-                }
-            }
-        }
+        // stage('upload_nexus') {
+        //     when {
+        //         expression {
+        //             return tag != null;
+        //         }
+        //     }
+        //     steps {
+        //         script {
+        //             docker.withRegistry("http://192.168.122.223:8082", 'nexus-docker') {
+        //                 cabbage_app.push()
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
