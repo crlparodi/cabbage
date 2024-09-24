@@ -7,7 +7,7 @@ pipeline {
         stage('test_ci_trigger') {
             steps {
                 script {
-                    sh 'Test CI Trigger'
+                    sh 'echo Test CI Trigger'
                 }
             }
         }
