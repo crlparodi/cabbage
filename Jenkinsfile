@@ -3,7 +3,7 @@ pipeline {
         label 'cabbage'
     }
     environment {
-        tag = env.TAG_NAME
+        tag = ${env.TAG_NAME}
     }
     stages {
         if(tag){
