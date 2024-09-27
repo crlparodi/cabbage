@@ -2,7 +2,9 @@ pipeline {
     agent {
         label 'cabbage'
     }
-
+    environment {
+        tag = sh(returnStdout: true, script: "git describe --tags --abbrev=0").trim()
+    }
     stages {
         stage('build_docker') {
             steps {
@@ -14,7 +16,7 @@ pipeline {
         stage('upload_nexus') {
             steps {
                 script {
-                    docker.withRegistry("http://192.168.122.223:8082", 'nexus-docker') {
+                    docker.withRegistry("http://docker-nexus.c-atmosphere.duckdns.org", 'nexus-docker') {
                         cabbage_app.push()
                     }
                 }
