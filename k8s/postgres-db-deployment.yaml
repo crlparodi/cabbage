@@ -89,7 +89,7 @@ spec:
                 configMapKeyRef:
                   key: SECRET_KEY
                   name: env
-          image: postgres:latest
+          image: postgres:16-alpine
           livenessProbe:
             exec:
               command:

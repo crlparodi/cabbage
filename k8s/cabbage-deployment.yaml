@@ -26,7 +26,7 @@ spec:
     spec:
       initContainers:
         - name: check-db-ready
-          image: postgres:latest
+          image: postgres:16-alpine
           command: ['sh', '-c', 
             'until pg_isready -h postgres-db -p 5434; 
             do echo waiting for database on host $POSTGRES_HOST; sleep 2; done;']
