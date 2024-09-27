@@ -4,8 +4,17 @@ pipeline {
     }
     environment {
         tag = "${env.TAG_NAME}"
+        tag2 = sh(returnStdout: true, script: "git tag --sort version:refname | tail -1").trim()
     }
     stages {
+        stage('display_tag') {
+            steps {
+                script {
+                    sh "echo ${tag}"
+                    sh "echo ${tag2}"
+                }
+            }
+        }
         stage('build_docker') {
             when {
                 expression {
