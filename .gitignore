@@ -145,6 +145,8 @@ celerybeat.pid
 # Environments
 .env
 .venv
+cabbage.env
+cabbage.dev.env
 env/
 env310/
 venv/

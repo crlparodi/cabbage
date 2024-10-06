@@ -8,9 +8,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile 
-    image: cabbage:0.4.0
+    image: cabbage:0.4.2
     env_file:
-      - ".env"
+      - "cabbage.env"
     networks:
       - cabbage
     working_dir: /usr/src/cabbage
@@ -41,7 +41,7 @@ services:
     command: /opt/env/bin/celery -A core worker -l INFO
     working_dir: /usr/src/cabbage
     env_file:
-      - ".env"
+      - "cabbage.env"
     depends_on:
       cabbage:
         condition: service_started
@@ -59,7 +59,7 @@ services:
     image: postgres:16-alpine3.18
     command: -p 5434
     env_file:
-      - ".env"
+      - "cabbage.env"
     expose:
       - 5434
     ports:
