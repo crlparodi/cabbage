@@ -1,4 +1,4 @@
-from python:3.10.7-slim
+from python:3.11-slim
 
 COPY . /usr/src/cabbage
 RUN python -m venv /opt/env
